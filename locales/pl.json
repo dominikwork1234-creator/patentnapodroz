@@ -27,7 +27,12 @@
     "headline": "Wyjazdy z pomysłem dla młodzieży i seniorów",
     "subheadline": "Organizujemy jednodniowe i kilkudniowe wycieczki, obozy oraz wyjazdy grupowe w Polsce i za granicą. Łączymy aktywność, integrację, zwiedzanie i spokojną organizację od A do Z.",
     "cta_primary": "Zobacz aktualne wyjazdy",
-    "cta_secondary": "Zapytaj o wyjazd"
+    "cta_secondary": "Zapytaj o wyjazd",
+    "badge": "Legalny organizator turystyki · CEOTiPO 42246",
+    "chip1": "Seniorzy",
+    "chip2": "Młodzież i szkoły",
+    "chip3": "Grupy zorganizowane",
+    "chip4": "Polska i zagranica"
   },
   "trust_bar": {
     "item1": "Legalny organizator turystyki",
@@ -48,7 +53,8 @@
         "Program kulturalno-przyrodniczy",
         "Czas na odpoczynek"
       ],
-      "cta": "Zobacz wyjazdy dla seniorów"
+      "cta": "Zobacz wyjazdy dla seniorów",
+      "image": "/assets/img/cat-seniors.jpg"
     },
     "youth": {
       "title": "Wyjazdy dla młodzieży",
@@ -60,7 +66,8 @@
         "Bezpieczna organizacja",
         "Doświadczeni opiekunowie"
       ],
-      "cta": "Zobacz wyjazdy dla młodzieży"
+      "cta": "Zobacz wyjazdy dla młodzieży",
+      "image": "/assets/img/cat-youth.jpg"
     },
     "oneday": {
       "title": "Wycieczki jednodniowe",
@@ -72,7 +79,8 @@
         "Program od A do Z",
         "Całodzienne wyjazdy"
       ],
-      "cta": "Zobacz wycieczki jednodniowe"
+      "cta": "Zobacz wycieczki jednodniowe",
+      "image": "/assets/img/cat-oneday.jpg"
     },
     "multiday": {
       "title": "Wyjazdy kilkudniowe",
@@ -84,7 +92,8 @@
         "Program dzień po dniu",
         "Opieka przez cały wyjazd"
       ],
-      "cta": "Zobacz wyjazdy kilkudniowe"
+      "cta": "Zobacz wyjazdy kilkudniowe",
+      "image": "/assets/img/cat-multiday.jpg"
     }
   },
   "current_offers": {
@@ -138,7 +147,9 @@
     "title": "Opinie uczestników",
     "subtitle": "Zobacz, co mówią o nas uczestnicy naszych wyjazdów",
     "cta_add": "Oceń nas w Google",
-    "cta_view": "Zobacz wszystkie opinie"
+    "cta_view": "Zobacz wszystkie opinie",
+    "google_title": "Oceń nas w Google",
+    "google_text": "Twoja opinia pomaga innym podróżnym. Byłeś z nami na wyjeździe? Podziel się wrażeniami!"
   },
   "about": {
     "title": "Kim jesteśmy",
@@ -206,5 +217,56 @@
     "cta_text": "Masz pytanie lub chcesz zapisać się na wyjazd? Wypełnij formularz lub zadzwoń:",
     "phone_cta": "Zadzwoń: 501 034 351",
     "form_cta": "Wypełnij formularz"
+  },
+  "topbar": {
+    "phone_label": "Zadzwoń",
+    "email_label": "Napisz",
+    "fb_label": "Facebook"
+  },
+  "categories": {
+    "section_title": "Wyjazdy dopasowane do Ciebie",
+    "section_subtitle": "Wybierz kategorię i zobacz, co dla Ciebie przygotowaliśmy"
+  },
+  "why_us": {
+    "title": "Dlaczego Patent na Podróż?",
+    "subtitle": "Organizacja od A do Z — Ty tylko pakujesz walizkę",
+    "items": [
+      {
+        "icon": "shield",
+        "title": "Legalny organizator",
+        "text": "Wpis do CEOTiPO nr 42246. Pełna gwarancja i bezpieczeństwo Twojej rezerwacji."
+      },
+      {
+        "icon": "bus",
+        "title": "Komfortowy transport",
+        "text": "Nowoczesne autokary z klimatyzacją, przystanki dopasowane do tempa grupy."
+      },
+      {
+        "icon": "guide",
+        "title": "Opieka pilota",
+        "text": "Doświadczony pilot i przewodnicy przez cały wyjazd — od wyjazdu do powrotu."
+      },
+      {
+        "icon": "route",
+        "title": "Program od A do Z",
+        "text": "Zwiedzanie, noclegi, wyżywienie i atrakcje — wszystko zaplanowane i opłacone."
+      },
+      {
+        "icon": "heart",
+        "title": "Spokojne tempo",
+        "text": "Bez nocnych przejazdów i biegania. Czas na kawę, odpoczynek i dobre wspomnienia."
+      },
+      {
+        "icon": "star",
+        "title": "Indywidualne podejście",
+        "text": "Program szyjemy na miarę grupy — seniorzy, młodzież, firmy, szkoły."
+      }
+    ]
+  },
+  "cta_banner": {
+    "title": "Masz pytanie? Porozmawiajmy!",
+    "text": "Zadzwoń — pomożemy dobrać wyjazd idealny dla Ciebie lub Twojej grupy.",
+    "phone_cta": "501 034 351",
+    "form_cta": "Napisz do nas"
   }
 }

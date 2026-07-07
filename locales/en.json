@@ -27,7 +27,12 @@
     "headline": "Thoughtful Trips for Youth and Seniors",
     "subheadline": "We organize one-day and multi-day trips, camps and group travel in Poland and abroad. We combine activity, integration, sightseeing and smooth organization from start to finish.",
     "cta_primary": "View Current Trips",
-    "cta_secondary": "Ask About a Trip"
+    "cta_secondary": "Ask About a Trip",
+    "badge": "Licensed tour operator · CEOTiPO 42246",
+    "chip1": "Seniors",
+    "chip2": "Youth & schools",
+    "chip3": "Organized groups",
+    "chip4": "Poland & abroad"
   },
   "trust_bar": {
     "item1": "Licensed Tourism Organizer",
@@ -48,7 +53,8 @@
         "Cultural and nature program",
         "Time to rest"
       ],
-      "cta": "View Senior Trips"
+      "cta": "View Senior Trips",
+      "image": "/assets/img/cat-seniors.jpg"
     },
     "youth": {
       "title": "Youth Trips",
@@ -60,7 +66,8 @@
         "Safe organization",
         "Experienced supervisors"
       ],
-      "cta": "View Youth Trips"
+      "cta": "View Youth Trips",
+      "image": "/assets/img/cat-youth.jpg"
     },
     "oneday": {
       "title": "One-Day Trips",
@@ -72,7 +79,8 @@
         "Full-day program",
         "All logistics handled"
       ],
-      "cta": "View One-Day Trips"
+      "cta": "View One-Day Trips",
+      "image": "/assets/img/cat-oneday.jpg"
     },
     "multiday": {
       "title": "Multi-Day Trips",
@@ -84,7 +92,8 @@
         "Day-by-day program",
         "Support throughout"
       ],
-      "cta": "View Multi-Day Trips"
+      "cta": "View Multi-Day Trips",
+      "image": "/assets/img/cat-multiday.jpg"
     }
   },
   "current_offers": {
@@ -138,7 +147,9 @@
     "title": "Participant Reviews",
     "subtitle": "See what participants say about our trips",
     "cta_add": "Review Us on Google",
-    "cta_view": "View All Reviews"
+    "cta_view": "View All Reviews",
+    "google_title": "Rate us on Google",
+    "google_text": "Your review helps other travelers. Been on a trip with us? Share your experience!"
   },
   "about": {
     "title": "About Us",
@@ -206,5 +217,56 @@
     "cta_text": "Have a question or want to book? Fill out the form or call:",
     "phone_cta": "Call: 501 034 351",
     "form_cta": "Fill Out Form"
+  },
+  "topbar": {
+    "phone_label": "Call us",
+    "email_label": "Email",
+    "fb_label": "Facebook"
+  },
+  "categories": {
+    "section_title": "Trips tailored to you",
+    "section_subtitle": "Choose a category and see what we've prepared for you"
+  },
+  "why_us": {
+    "title": "Why Patent na Podróż?",
+    "subtitle": "Organization from A to Z — you just pack your suitcase",
+    "items": [
+      {
+        "icon": "shield",
+        "title": "Licensed operator",
+        "text": "Registered in CEOTiPO no. 42246. Full guarantee and security of your booking."
+      },
+      {
+        "icon": "bus",
+        "title": "Comfortable transport",
+        "text": "Modern air-conditioned coaches, stops adjusted to the group's pace."
+      },
+      {
+        "icon": "guide",
+        "title": "Tour leader care",
+        "text": "Experienced tour leader and guides throughout the trip — from departure to return."
+      },
+      {
+        "icon": "route",
+        "title": "Full program A to Z",
+        "text": "Sightseeing, accommodation, meals and attractions — all planned and paid for."
+      },
+      {
+        "icon": "heart",
+        "title": "Relaxed pace",
+        "text": "No night transfers, no rushing. Time for coffee, rest and good memories."
+      },
+      {
+        "icon": "star",
+        "title": "Personal approach",
+        "text": "Programs tailored to your group — seniors, youth, companies, schools."
+      }
+    ]
+  },
+  "cta_banner": {
+    "title": "Have a question? Let's talk!",
+    "text": "Call us — we'll help you choose the perfect trip for you or your group.",
+    "phone_cta": "+48 501 034 351",
+    "form_cta": "Write to us"
   }
 }

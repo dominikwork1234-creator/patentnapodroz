@@ -1,216 +1,143 @@
 const fs = require('fs');
 const path = require('path');
 
-// Configuration
 const LANGUAGES = ['pl', 'en'];
 const DEFAULT_LANG = 'pl';
-const SRC_DIR = 'src';
-const LOCALES_DIR = 'locales';
-const ASSETS_DIR = 'assets';
-const DIST_DIR = 'dist';
+const DIST = 'dist';
 
-// Helper: Flatten nested JSON
-function flattenObj(obj, prefix = '') {
-    return Object.keys(obj).reduce((acc, key) => {
-        const prefixedKey = prefix ? `${prefix}.${key}` : key;
-        if (typeof obj[key] === 'object' && obj[key] !== null && !Array.isArray(obj[key])) {
-            Object.assign(acc, flattenObj(obj[key], prefixedKey));
-        } else {
-            acc[prefixedKey] = obj[key];
-        }
-        return acc;
-    }, {});
-}
-
-// Helper: Access nested property
-function getNestedProp(obj, path) {
-    return path.split('.').reduce((acc, part) => acc && acc[part], obj);
-}
-
-// Helper: Render template
-function renderTemplate(template, data, lang, langPrefix) {
-    let output = template;
-    
-    // Replace {{KEY}} tokens
-    const flat = flattenObj(data);
-    for (const [key, value] of Object.entries(flat)) {
-        const regex = new RegExp(`{{${key}}}`, 'g');
-        output = output.replace(regex, value);
+function flatten(obj, prefix = '') {
+  return Object.keys(obj).reduce((acc, k) => {
+    const key = prefix ? `${prefix}.${k}` : k;
+    if (typeof obj[k] === 'object' && obj[k] !== null && !Array.isArray(obj[k])) {
+      Object.assign(acc, flatten(obj[k], key));
+    } else if (!Array.isArray(obj[k])) {
+      acc[key] = obj[k];
     }
-    
-    // Replace {{LANG}} and {{LANG_PREFIX}}
-    output = output.replace(/{{LANG}}/g, lang);
-    output = output.replace(/{{LANG_PREFIX}}/g, langPrefix);
-    
-    // Generate hreflang tags
-    let hreflangTags = LANGUAGES.map(l => {
-        const href = l === DEFAULT_LANG ? '/' : `/${l}/`;
-        return `<link rel="alternate" hreflang="${l}" href="${href}">`;
-    }).join('\n    ');
-    hreflangTags += `\n    <link rel="canonical" href="${langPrefix}">`;
-    output = output.replace(/{{HREFLANG_TAGS}}/g, hreflangTags);
-    
-    // Generate current offers cards
-    const offers = data.current_offers?.trips || [];
-    const offersHtml = offers.map(trip => `
-        <div class="offer-card">
-            <div class="offer-image">
-                <img src="${trip.image}" alt="${trip.name}" loading="lazy">
-            </div>
-            <div class="offer-content">
-                <div class="offer-meta">
-                    <span>📅 ${trip.start_date}</span>
-                    <span>⏱️ ${trip.duration}</span>
-                    <span>👥 ${trip.target}</span>
-                </div>
-                <h3 class="offer-title">${trip.name}</h3>
-                <p class="offer-subtitle">${trip.subtitle}</p>
-                <p class="offer-desc">${trip.short_desc}</p>
-                <div class="offer-footer">
-                    <div class="offer-price">${trip.price}</div>
-                    <a href="#contact" class="btn btn-primary">${data.hero?.cta_secondary || 'Contact'}</a>
-                </div>
-            </div>
+    return acc;
+  }, {});
+}
+
+function render(template, data, lang) {
+  let out = template;
+  const isDefault = lang === DEFAULT_LANG;
+  const langPrefix = isDefault ? '/' : `/${lang}/`;
+
+  // Language switcher pills
+  const langSwitch = LANGUAGES.map(l => {
+    const href = l === DEFAULT_LANG ? '/' : `/${l}/`;
+    const cls = l === lang ? ' class="active"' : '';
+    return `<a href="${href}"${cls}>${l.toUpperCase()}</a>`;
+  }).join('');
+  out = out.replace(/{{LANG_SWITCH}}/g, langSwitch);
+
+  // Offers cards
+  const offers = (data.current_offers?.trips || []).map(t => `
+    <article class="offer-card">
+      <div class="offer-media">
+        <img src="${t.image}" alt="${t.name}" loading="lazy">
+        <span class="offer-tag">${t.target}</span>
+        <span class="offer-date-chip">📅 ${t.start_date.split('-').reverse().join('.')} · ${t.duration}</span>
+      </div>
+      <div class="offer-body">
+        <h3>${t.name}</h3>
+        <p class="offer-sub">${t.subtitle}</p>
+        <p class="offer-desc">${t.short_desc}</p>
+        <div class="offer-foot">
+          <div class="offer-price"><small>${lang === 'pl' ? 'cena od' : 'from'}</small><strong>${t.price}</strong></div>
+          <a href="#kontakt" class="btn btn-accent">${data.hero.cta_secondary}</a>
         </div>
-    `).join('');
-    output = output.replace(/{{CURRENT_OFFERS_CARDS}}/g, offersHtml);
-    
-    // Generate past trips cards
-    const pastTrips = data.past_trips_section?.trips || [];
-    const pastTripsHtml = pastTrips.map(trip => `
-        <div class="past-trip-card">
-            <div class="past-trip-image">
-                <img src="${trip.image}" alt="${trip.name}" loading="lazy">
-            </div>
-            <div class="past-trip-content">
-                <div class="offer-meta">
-                    <span>👥 ${trip.target}</span>
-                </div>
-                <h3 class="offer-title">${trip.name}</h3>
-                <p class="offer-desc">${trip.description}</p>
-            </div>
-        </div>
-    `).join('');
-    output = output.replace(/{{PAST_TRIPS_CARDS}}/g, pastTripsHtml);
-    
-    return output;
+      </div>
+    </article>`).join('\n');
+  out = out.replace(/{{CURRENT_OFFERS_CARDS}}/g, offers);
+
+  // Past trips
+  const past = (data.past_trips_section?.trips || []).map(t => `
+    <article class="past-card">
+      <div class="past-media">
+        <img src="${t.image}" alt="${t.name}" loading="lazy">
+        <span class="past-tag">${t.target}</span>
+      </div>
+      <div class="past-body">
+        <h3>${t.name}</h3>
+        <p>${t.description}</p>
+      </div>
+    </article>`).join('\n');
+  out = out.replace(/{{PAST_TRIPS_CARDS}}/g, past);
+
+  // Why us cards
+  const icons = { shield: '🛡️', bus: '🚌', guide: '🧭', route: '🗺️', heart: '💚', star: '⭐' };
+  const why = (data.why_us?.items || []).map(i => `
+    <div class="why-card">
+      <div class="why-icon">${icons[i.icon] || '✨'}</div>
+      <h3>${i.title}</h3>
+      <p>${i.text}</p>
+    </div>`).join('\n');
+  out = out.replace(/{{WHY_US_CARDS}}/g, why);
+
+  // About values
+  const values = (data.about?.values || []).map(v => `<li>${v}</li>`).join('\n');
+  out = out.replace(/{{ABOUT_VALUES}}/g, values);
+
+  // Hreflang
+  let hreflang = LANGUAGES.map(l => {
+    const href = l === DEFAULT_LANG ? 'https://patentnapodroz.pl/' : `https://patentnapodroz.pl/${l}/`;
+    return `<link rel="alternate" hreflang="${l}" href="${href}">`;
+  }).join('\n');
+  hreflang += `\n<link rel="canonical" href="https://patentnapodroz.pl${langPrefix}">`;
+  out = out.replace(/{{HREFLANG_TAGS}}/g, hreflang);
+
+  // Flat tokens
+  const flat = flatten(data);
+  for (const [k, v] of Object.entries(flat)) {
+    out = out.split(`{{${k}}}`).join(v);
+  }
+  out = out.replace(/{{LANG_PREFIX}}/g, langPrefix);
+  out = out.replace(/{{LANG}}/g, lang);
+  return out;
 }
 
-// Main build function
-function build() {
-    console.log('🔨 Building Patent na Podróż website...\n');
-    
-    // Clean dist
-    if (fs.existsSync(DIST_DIR)) {
-        fs.rmSync(DIST_DIR, { recursive: true });
-    }
-    fs.mkdirSync(DIST_DIR, { recursive: true });
-    
-    // Read template
-    const template = fs.readFileSync(path.join(SRC_DIR, 'template.html'), 'utf-8');
-    
-    // Build for each language
-    LANGUAGES.forEach(lang => {
-        console.log(`📝 Building ${lang.toUpperCase()} version...`);
-        
-        // Load locale data
-        const localeFile = path.join(LOCALES_DIR, `${lang}.json`);
-        if (!fs.existsSync(localeFile)) {
-            console.error(`❌ Missing locale file: ${localeFile}`);
-            process.exit(1);
-        }
-        
-        const data = JSON.parse(fs.readFileSync(localeFile, 'utf-8'));
-        
-        // Determine output path
-        const isDefault = lang === DEFAULT_LANG;
-        const langPrefix = isDefault ? '' : `${lang}/`;
-        const outputDir = path.join(DIST_DIR, langPrefix);
-        
-        // Create output directory
-        fs.mkdirSync(outputDir, { recursive: true });
-        
-        // Render and write index.html
-        const rendered = renderTemplate(template, data, lang, `/${langPrefix}`);
-        fs.writeFileSync(path.join(outputDir, 'index.html'), rendered);
-        
-        console.log(`  ✓ ${outputDir}index.html`);
-    });
-    
-    // Copy assets
-    console.log('\n📦 Copying assets...');
-    function copyRecursive(src, dest) {
-        if (!fs.existsSync(src)) {
-            console.warn(`⚠️  ${src} does not exist, skipping`);
-            return;
-        }
-        
-        const stats = fs.statSync(src);
-        if (stats.isDirectory()) {
-            fs.mkdirSync(dest, { recursive: true });
-            fs.readdirSync(src).forEach(file => {
-                copyRecursive(path.join(src, file), path.join(dest, file));
-            });
-        } else {
-            fs.copyFileSync(src, dest);
-        }
-    }
-    
-    copyRecursive(ASSETS_DIR, path.join(DIST_DIR, ASSETS_DIR));
-    console.log(`  ✓ ${ASSETS_DIR}/`);
-    
-    // Generate sitemap.xml
-    console.log('\n🗺️  Generating sitemap...');
-    const baseUrl = 'https://patentnapodroz.pl';
-    const pages = ['', ...LANGUAGES.filter(l => l !== DEFAULT_LANG).map(l => `${l}/`)];
-    
-    const sitemapXml = `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml">
-${pages.map(page => `  <url>
-    <loc>${baseUrl}/${page}</loc>
-    <changefreq>weekly</changefreq>
-    <priority>${page === '' ? '1.0' : '0.8'}</priority>
-${LANGUAGES.map(lang => {
-    const alternate = lang === DEFAULT_LANG ? '' : `${lang}/`;
-    return `    <xhtml:link rel="alternate" hreflang="${lang}" href="${baseUrl}/${alternate}"/>`;
-}).join('\n')}
-  </url>`).join('\n')}
-</urlset>`;
-    
-    fs.writeFileSync(path.join(DIST_DIR, 'sitemap.xml'), sitemapXml);
-    console.log('  ✓ sitemap.xml');
-    
-    // Generate robots.txt
-    const robotsTxt = `# Patent na Podróż
-User-agent: *
-Allow: /
-
-Sitemap: ${baseUrl}/sitemap.xml
-`;
-    fs.writeFileSync(path.join(DIST_DIR, 'robots.txt'), robotsTxt);
-    console.log('  ✓ robots.txt');
-    
-    // Generate favicon placeholder if needed
-    const faviconPath = path.join(DIST_DIR, ASSETS_DIR, 'img', 'favicon.svg');
-    if (!fs.existsSync(faviconPath)) {
-        const faviconSvg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-  <rect fill="#2d5f3f" width="100" height="100"/>
-  <text x="50" y="70" font-family="Arial" font-size="60" fill="white" text-anchor="middle" font-weight="bold">P</text>
-</svg>`;
-        fs.mkdirSync(path.dirname(faviconPath), { recursive: true });
-        fs.writeFileSync(faviconPath, faviconSvg);
-        console.log('  ✓ favicon.svg (placeholder)');
-    }
-    
-    console.log('\n✅ Build complete!');
-    console.log(`📁 Output: ${path.resolve(DIST_DIR)}/`);
+function copyDir(src, dest) {
+  fs.mkdirSync(dest, { recursive: true });
+  for (const f of fs.readdirSync(src)) {
+    const s = path.join(src, f), d = path.join(dest, f);
+    fs.statSync(s).isDirectory() ? copyDir(s, d) : fs.copyFileSync(s, d);
+  }
 }
 
-// Run build
-try {
-    build();
-} catch (error) {
-    console.error('\n❌ Build failed:', error.message);
+console.log('🔨 Building Patent na Podróż v3...');
+if (fs.existsSync(DIST)) fs.rmSync(DIST, { recursive: true });
+fs.mkdirSync(DIST, { recursive: true });
+
+const template = fs.readFileSync('src/template.html', 'utf-8');
+for (const lang of LANGUAGES) {
+  const data = JSON.parse(fs.readFileSync(`locales/${lang}.json`, 'utf-8'));
+  const outDir = lang === DEFAULT_LANG ? DIST : path.join(DIST, lang);
+  fs.mkdirSync(outDir, { recursive: true });
+  fs.writeFileSync(path.join(outDir, 'index.html'), render(template, data, lang));
+  console.log(`  ✓ ${lang}: ${outDir}/index.html`);
+}
+
+copyDir('assets', path.join(DIST, 'assets'));
+console.log('  ✓ assets/');
+
+// Verify no unreplaced tokens
+for (const f of ['dist/index.html', 'dist/en/index.html']) {
+  const html = fs.readFileSync(f, 'utf-8');
+  const leftover = html.match(/{{[^}]+}}/g);
+  if (leftover) {
+    console.error(`  ✗ UNREPLACED TOKENS in ${f}:`, [...new Set(leftover)].join(', '));
     process.exit(1);
+  }
 }
+console.log('  ✓ token check passed');
+
+const base = 'https://patentnapodroz.pl';
+const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>${base}/</loc><priority>1.0</priority></url>
+  <url><loc>${base}/en/</loc><priority>0.8</priority></url>
+</urlset>`;
+fs.writeFileSync(path.join(DIST, 'sitemap.xml'), sitemap);
+fs.writeFileSync(path.join(DIST, 'robots.txt'), `User-agent: *\nAllow: /\n\nSitemap: ${base}/sitemap.xml\n`);
+console.log('  ✓ sitemap.xml + robots.txt');
+console.log('✅ Build complete');
