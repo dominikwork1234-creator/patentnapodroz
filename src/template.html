@@ -50,12 +50,12 @@
     <a href="{{LANG_PREFIX}}" class="logo"><img src="/assets/img/logo.svg" alt="{{meta.site_name}}" width="190" height="52"></a>
     <nav class="main-nav" id="mainNav">
       <ul>
-        <li><a href="#oferta">{{nav.trips}}</a></li>
-        <li><a href="#dla-kogo">{{nav.trips_seniors}} / {{nav.trips_youth}}</a></li>
-        <li><a href="#zrealizowane">{{nav.past_trips}}</a></li>
-        <li><a href="#o-nas">{{nav.about}}</a></li>
-        <li><a href="#opinie">{{nav.reviews}}</a></li>
-        <li><a href="#kontakt" class="nav-cta">{{nav.contact}}</a></li>
+        <li><a href="{{LANG_PREFIX}}#oferta">{{nav.trips}}</a></li>
+        <li><a href="{{LANG_PREFIX}}#dla-kogo">{{nav.trips_seniors}} / {{nav.trips_youth}}</a></li>
+        <li><a href="{{LANG_PREFIX}}#zrealizowane">{{nav.past_trips}}</a></li>
+        <li><a href="{{LANG_PREFIX}}#o-nas">{{nav.about}}</a></li>
+        <li><a href="{{LANG_PREFIX}}#opinie">{{nav.reviews}}</a></li>
+        <li><a href="{{LANG_PREFIX}}#kontakt" class="nav-cta">{{nav.contact}}</a></li>
       </ul>
     </nav>
     <a href="tel:+48501034351" class="header-phone"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1V20a1 1 0 01-1 1C10.61 21 3 13.39 3 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.24.2 2.45.57 3.57a1 1 0 01-.24 1.02l-2.21 2.2z"/></svg><span>501 034 351</span></a>
@@ -73,8 +73,8 @@
     <h1>{{hero.headline}}</h1>
     <p class="hero-sub">{{hero.subheadline}}</p>
     <div class="hero-ctas">
-      <a href="#oferta" class="btn btn-accent btn-lg">{{hero.cta_primary}}</a>
-      <a href="#kontakt" class="btn btn-ghost btn-lg">{{hero.cta_secondary}}</a>
+      <a href="{{LANG_PREFIX}}#oferta" class="btn btn-accent btn-lg">{{hero.cta_primary}}</a>
+      <a href="{{LANG_PREFIX}}#kontakt" class="btn btn-ghost btn-lg">{{hero.cta_secondary}}</a>
     </div>
     <div class="hero-chips">
       <span>{{hero.chip1}}</span><span>{{hero.chip2}}</span><span>{{hero.chip3}}</span><span>{{hero.chip4}}</span>
@@ -105,7 +105,7 @@
       <p>{{categories.section_subtitle}}</p>
     </div>
     <div class="cat-grid">
-      <a href="#kontakt" class="cat-card">
+      <a href="{{LANG_PREFIX}}#kontakt" class="cat-card">
         <img src="{{audiences.seniors.image}}" alt="{{audiences.seniors.title}}" loading="lazy">
         <div class="cat-overlay"></div>
         <div class="cat-body">
@@ -114,7 +114,7 @@
           <span class="cat-link">{{audiences.seniors.cta}} →</span>
         </div>
       </a>
-      <a href="#kontakt" class="cat-card">
+      <a href="{{LANG_PREFIX}}#kontakt" class="cat-card">
         <img src="{{audiences.youth.image}}" alt="{{audiences.youth.title}}" loading="lazy">
         <div class="cat-overlay"></div>
         <div class="cat-body">
@@ -123,7 +123,7 @@
           <span class="cat-link">{{audiences.youth.cta}} →</span>
         </div>
       </a>
-      <a href="#kontakt" class="cat-card">
+      <a href="{{LANG_PREFIX}}#kontakt" class="cat-card">
         <img src="{{audiences.oneday.image}}" alt="{{audiences.oneday.title}}" loading="lazy">
         <div class="cat-overlay"></div>
         <div class="cat-body">
@@ -132,7 +132,7 @@
           <span class="cat-link">{{audiences.oneday.cta}} →</span>
         </div>
       </a>
-      <a href="#kontakt" class="cat-card">
+      <a href="{{LANG_PREFIX}}#kontakt" class="cat-card">
         <img src="{{audiences.multiday.image}}" alt="{{audiences.multiday.title}}" loading="lazy">
         <div class="cat-overlay"></div>
         <div class="cat-body">
@@ -168,7 +168,7 @@
     </div>
     <div class="cta-banner-actions">
       <a href="tel:+48501034351" class="btn btn-white btn-lg"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1V20a1 1 0 01-1 1C10.61 21 3 13.39 3 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.24.2 2.45.57 3.57a1 1 0 01-.24 1.02l-2.21 2.2z"/></svg> {{cta_banner.phone_cta}}</a>
-      <a href="#kontakt" class="btn btn-outline-white btn-lg">{{cta_banner.form_cta}}</a>
+      <a href="{{LANG_PREFIX}}#kontakt" class="btn btn-outline-white btn-lg">{{cta_banner.form_cta}}</a>
     </div>
   </div>
 </section>
@@ -202,7 +202,7 @@
       <h2>{{about.title}}</h2>
       <p class="lead">{{about.text}}</p>
       <ul class="about-values">{{ABOUT_VALUES}}</ul>
-      <a href="#kontakt" class="btn btn-primary btn-lg">{{hero.cta_secondary}}</a>
+      <a href="{{LANG_PREFIX}}#kontakt" class="btn btn-primary btn-lg">{{hero.cta_secondary}}</a>
     </div>
   </div>
 </section>
@@ -296,18 +296,18 @@
     <div class="f-col">
       <h4>{{footer.links_title}}</h4>
       <ul>
-        <li><a href="#oferta">{{nav.trips}}</a></li>
-        <li><a href="#zrealizowane">{{nav.past_trips}}</a></li>
-        <li><a href="#o-nas">{{nav.about}}</a></li>
-        <li><a href="#kontakt">{{nav.contact}}</a></li>
+        <li><a href="{{LANG_PREFIX}}#oferta">{{nav.trips}}</a></li>
+        <li><a href="{{LANG_PREFIX}}#zrealizowane">{{nav.past_trips}}</a></li>
+        <li><a href="{{LANG_PREFIX}}#o-nas">{{nav.about}}</a></li>
+        <li><a href="{{LANG_PREFIX}}#kontakt">{{nav.contact}}</a></li>
       </ul>
     </div>
     <div class="f-col">
       <h4>{{footer.legal_title}}</h4>
       <ul>
-        <li><a href="#">{{footer.privacy}}</a></li>
-        <li><a href="#">{{footer.terms}}</a></li>
-        <li><a href="#">{{footer.rodo}}</a></li>
+        <li><a href="{{PRIVACY_URL}}">{{footer.privacy}}</a></li>
+        <li><a href="{{TERMS_URL}}">{{footer.terms}}</a></li>
+        <li><a href="{{PRIVACY_URL}}#rodo">{{footer.rodo}}</a></li>
       </ul>
     </div>
     <div class="f-col">
