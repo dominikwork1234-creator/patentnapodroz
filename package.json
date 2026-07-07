@@ -1,0 +1,15 @@
+{
+  "name": "patentnapodroz",
+  "version": "1.0.0",
+  "description": "Patent na Podróż - Travel agency website",
+  "scripts": {
+    "build": "node build.js",
+    "dev": "node build.js && npx serve dist -p 3000"
+  },
+  "keywords": ["travel", "agency", "poland"],
+  "author": "Patent na Podróż",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "serve": "^14.2.0"
+  }
+}

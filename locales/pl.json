@@ -1,0 +1,210 @@
+{
+  "meta": {
+    "site_name": "Patent na Podróż",
+    "site_description": "Organizujemy wyjazdy z pomysłem dla młodzieży i seniorów – jednodniowe i kilkudniowe wycieczki w Polsce i za granicą z komfortowym transportem i opieką przewodnika.",
+    "og_image": "/assets/img/og-card.jpg",
+    "phone": "501 034 351",
+    "email": "patentnapodroz@gmail.com",
+    "facebook": "https://www.facebook.com/patentnapodroz",
+    "company_name": "Clever Training Sp. z o.o.",
+    "ceotipo": "42246",
+    "city": "Bydgoszcz"
+  },
+  "nav": {
+    "home": "Strona główna",
+    "trips": "Oferta",
+    "trips_seniors": "Seniorzy",
+    "trips_youth": "Młodzież",
+    "trips_oneday": "Jednodniowe",
+    "trips_multiday": "Kilkudniowe",
+    "past_trips": "Zrealizowane wyjazdy",
+    "about": "O nas",
+    "reviews": "Opinie",
+    "documents": "Dokumenty",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "headline": "Wyjazdy z pomysłem dla młodzieży i seniorów",
+    "subheadline": "Organizujemy jednodniowe i kilkudniowe wycieczki, obozy oraz wyjazdy grupowe w Polsce i za granicą. Łączymy aktywność, integrację, zwiedzanie i spokojną organizację od A do Z.",
+    "cta_primary": "Zobacz aktualne wyjazdy",
+    "cta_secondary": "Zapytaj o wyjazd"
+  },
+  "trust_bar": {
+    "item1": "Legalny organizator turystyki",
+    "item2": "Numer CEOTiPO: 42246",
+    "item3": "Wyjazdy dla seniorów i młodzieży",
+    "item4": "Komfortowy transport",
+    "item5": "Opieka pilota",
+    "item6": "Kontakt: 501 034 351"
+  },
+  "audiences": {
+    "seniors": {
+      "title": "Wyjazdy dla seniorów",
+      "description": "Podróże w spokojnym tempie, z komfortowym transportem, opieką przewodnika i programem dopasowanym do grupy. Stawiamy na kulturę, naturę, historię, lokalne smaki i czas na odpoczynek.",
+      "points": [
+        "Spokojne tempo zwiedzania",
+        "Komfortowy transport",
+        "Opieka przewodnika",
+        "Program kulturalno-przyrodniczy",
+        "Czas na odpoczynek"
+      ],
+      "cta": "Zobacz wyjazdy dla seniorów"
+    },
+    "youth": {
+      "title": "Wyjazdy dla młodzieży",
+      "description": "Organizujemy wycieczki szkolne, obozy i aktywne wyjazdy dla młodzieży. Łączymy edukację, integrację, przygodę i dobrą organizację.",
+      "points": [
+        "Aktywny program",
+        "Integracja grupy",
+        "Wartość edukacyjna",
+        "Bezpieczna organizacja",
+        "Doświadczeni opiekunowie"
+      ],
+      "cta": "Zobacz wyjazdy dla młodzieży"
+    },
+    "oneday": {
+      "title": "Wycieczki jednodniowe",
+      "description": "Idealne dla szkół, seniorów i grup zorganizowanych. Ciekawy program, prosty transport i sprawna organizacja.",
+      "points": [
+        "Dla szkół i grup",
+        "Szybka organizacja",
+        "Przystępna cena",
+        "Program od A do Z",
+        "Całodzienne wyjazdy"
+      ],
+      "cta": "Zobacz wycieczki jednodniowe"
+    },
+    "multiday": {
+      "title": "Wyjazdy kilkudniowe",
+      "description": "Kompleksowe wyjazdy wielodniowe z transportem, noclegami, wyżywieniem i opieką przewodnika. Organizujemy wszystko od początku do końca.",
+      "points": [
+        "Transport autokarowy",
+        "Zakwaterowanie",
+        "Wyżywienie (HB/FB)",
+        "Program dzień po dniu",
+        "Opieka przez cały wyjazd"
+      ],
+      "cta": "Zobacz wyjazdy kilkudniowe"
+    }
+  },
+  "current_offers": {
+    "section_title": "Aktualne wyjazdy",
+    "cta_all": "Zobacz wszystkie oferty",
+    "trips": [
+      {
+        "id": "podlasie-2026",
+        "name": "Sekrety Podlasia",
+        "subtitle": "7 dni natury, historii i wyjątkowych miejsc",
+        "start_date": "2026-09-06",
+        "end_date": "2026-09-12",
+        "duration": "7 dni",
+        "target": "Seniorzy",
+        "price": "2550 zł / os.",
+        "short_desc": "Podlasie na spokojnie – idealny wyjazd dla seniorów z komfortowym transportem, zakwaterowaniem, wyżywieniem HB i opieką przewodnika.",
+        "image": "/assets/img/podlasie.jpg",
+        "slug": "sekrety-podlasia"
+      }
+    ]
+  },
+  "past_trips_section": {
+    "title": "Zrealizowane wyjazdy",
+    "subtitle": "Zobacz, gdzie byliśmy i co robimy dla naszych uczestników",
+    "cta": "Zobacz wszystkie relacje",
+    "trips": [
+      {
+        "name": "Austria, Słowenia i Czechy",
+        "target": "Seniorzy",
+        "description": "Wyjazd połączył spokojne zwiedzanie, przyrodę i kulturę. Program obejmował m.in. Landskron, pokaz orłów, Villach, Klagenfurt, Pyramidenkogel, wodospad Finsterbach, Gerlitzen, rejs do Ossiach, Lublanę, Wiedeń i Brno.",
+        "image": "/assets/img/austria-past.jpg",
+        "slug": "austria-slowenia-czechy"
+      },
+      {
+        "name": "Gdynia dla młodzieży",
+        "target": "Młodzież",
+        "description": "Zrealizowaliśmy jednodniową wycieczkę młodzieżową do Gdyni, łączącą edukację, historię i czas na odpoczynek nad morzem. Program obejmował Muzeum Emigracji, spacer po porcie, ORP Błyskawica oraz relaks na plaży.",
+        "image": "/assets/img/gdynia-past.jpg",
+        "slug": "gdynia-mlodziez"
+      },
+      {
+        "name": "Spływ kajakowy Brdą",
+        "target": "Młodzież",
+        "description": "Dla uczniów I LO w Bydgoszczy zorganizowaliśmy jednodniowe spływy kajakowe Brdą na trasie z Opławca do Przystani Zimne Wody. Po aktywnej części dnia uczestnicy odpoczywali przy ognisku i pieczeniu kiełbasek.",
+        "image": "/assets/img/brda-past.jpg",
+        "slug": "brda-kayaking"
+      }
+    ]
+  },
+  "reviews_section": {
+    "title": "Opinie uczestników",
+    "subtitle": "Zobacz, co mówią o nas uczestnicy naszych wyjazdów",
+    "cta_add": "Oceń nas w Google",
+    "cta_view": "Zobacz wszystkie opinie"
+  },
+  "about": {
+    "title": "Kim jesteśmy",
+    "text": "Patent na Podróż to biuro podróży tworzone z pasji do aktywnego wypoczynku, edukacji i odkrywania miejsc z charakterem. Organizujemy wyjazdy dla seniorów, młodzieży i grup zorganizowanych. Dbamy o program, logistykę, komfort i dobrą atmosferę.",
+    "values": [
+      "Bezpieczeństwo i legalność",
+      "Komfortowa organizacja",
+      "Doświadczeni przewodnicy",
+      "Indywidualne podejście",
+      "Sprawdzone trasy"
+    ]
+  },
+  "contact_section": {
+    "title": "Masz pytanie o wyjazd?",
+    "subtitle": "Zadzwoń lub wypełnij krótki formularz. Odpowiemy i pomożemy dobrać wyjazd do grupy.",
+    "form_title": "Zapytaj o wyjazd",
+    "form_name": "Imię i nazwisko",
+    "form_phone": "Telefon",
+    "form_email": "Email",
+    "form_trip": "Który wyjazd Cię interesuje?",
+    "form_target": "Dla kogo",
+    "form_target_senior": "Seniorzy",
+    "form_target_youth": "Młodzież",
+    "form_target_school": "Grupa szkolna",
+    "form_target_oneday": "Jednodniowy",
+    "form_target_multiday": "Kilkudniowy",
+    "form_target_other": "Inne",
+    "form_participants": "Liczba uczestników",
+    "form_date": "Preferowany termin",
+    "form_message": "Wiadomość / pytanie",
+    "form_gdpr": "Wyrażam zgodę na przetwarzanie moich danych osobowych w celu obsługi zapytania zgodnie z polityką prywatności.",
+    "form_marketing": "Wyrażam zgodę na otrzymywanie informacji o przyszłych wyjazdach Patent na Podróż (opcjonalne).",
+    "form_submit": "Wyślij zapytanie",
+    "form_success": "Dziękujemy za kontakt! Odpowiemy wkrótce.",
+    "form_error": "Wystąpił błąd. Spróbuj ponownie lub zadzwoń: 501 034 351"
+  },
+  "footer": {
+    "about_title": "Patent na Podróż",
+    "about_text": "Organizujemy wyjazdy z pomysłem dla młodzieży i seniorów w Polsce i za granicą.",
+    "links_title": "Przydatne linki",
+    "legal_title": "Dokumenty",
+    "contact_title": "Kontakt",
+    "ceotipo_label": "CEOTiPO",
+    "company_label": "Organizator",
+    "copyright": "© 2026 Patent na Podróż. Wszystkie prawa zastrzeżone.",
+    "privacy": "Polityka prywatności",
+    "terms": "OWU",
+    "rodo": "RODO",
+    "image_consent": "Zgoda na wizerunek"
+  },
+  "trip_detail": {
+    "back": "← Powrót do oferty",
+    "quick_facts": "Podstawowe informacje",
+    "date": "Termin",
+    "duration": "Czas trwania",
+    "target": "Dla kogo",
+    "price": "Cena",
+    "transport": "Transport",
+    "accommodation": "Zakwaterowanie",
+    "meals": "Wyżywienie",
+    "guide": "Opieka",
+    "program_title": "Program wyjazdu",
+    "included_title": "Cena obejmuje",
+    "cta_title": "Zainteresowany?",
+    "cta_text": "Masz pytanie lub chcesz zapisać się na wyjazd? Wypełnij formularz lub zadzwoń:",
+    "phone_cta": "Zadzwoń: 501 034 351",
+    "form_cta": "Wypełnij formularz"
+  }
+}

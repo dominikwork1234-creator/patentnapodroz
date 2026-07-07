@@ -1,0 +1,210 @@
+{
+  "meta": {
+    "site_name": "Patent na Podróż",
+    "site_description": "We organize thoughtfully crafted trips for youth and seniors – one-day and multi-day excursions in Poland and abroad with comfortable transport and guide support.",
+    "og_image": "/assets/img/og-card.jpg",
+    "phone": "501 034 351",
+    "email": "patentnapodroz@gmail.com",
+    "facebook": "https://www.facebook.com/patentnapodroz",
+    "company_name": "Clever Training Sp. z o.o.",
+    "ceotipo": "42246",
+    "city": "Bydgoszcz"
+  },
+  "nav": {
+    "home": "Home",
+    "trips": "Trips",
+    "trips_seniors": "Seniors",
+    "trips_youth": "Youth",
+    "trips_oneday": "One-day",
+    "trips_multiday": "Multi-day",
+    "past_trips": "Past Trips",
+    "about": "About Us",
+    "reviews": "Reviews",
+    "documents": "Documents",
+    "contact": "Contact"
+  },
+  "hero": {
+    "headline": "Thoughtful Trips for Youth and Seniors",
+    "subheadline": "We organize one-day and multi-day trips, camps and group travel in Poland and abroad. We combine activity, integration, sightseeing and smooth organization from start to finish.",
+    "cta_primary": "View Current Trips",
+    "cta_secondary": "Ask About a Trip"
+  },
+  "trust_bar": {
+    "item1": "Licensed Tourism Organizer",
+    "item2": "CEOTiPO Number: 42246",
+    "item3": "Trips for Seniors and Youth",
+    "item4": "Comfortable Transport",
+    "item5": "Guide Support",
+    "item6": "Contact: 501 034 351"
+  },
+  "audiences": {
+    "seniors": {
+      "title": "Senior Trips",
+      "description": "Travel at a comfortable pace with quality transport, guide support and a program tailored to the group. We focus on culture, nature, history, local flavors and time to relax.",
+      "points": [
+        "Comfortable sightseeing pace",
+        "Quality transport",
+        "Guide support",
+        "Cultural and nature program",
+        "Time to rest"
+      ],
+      "cta": "View Senior Trips"
+    },
+    "youth": {
+      "title": "Youth Trips",
+      "description": "We organize school trips, camps and active trips for young people. We combine education, team building, adventure and solid organization.",
+      "points": [
+        "Active program",
+        "Group integration",
+        "Educational value",
+        "Safe organization",
+        "Experienced supervisors"
+      ],
+      "cta": "View Youth Trips"
+    },
+    "oneday": {
+      "title": "One-Day Trips",
+      "description": "Perfect for schools, seniors and organized groups. Interesting program, simple transport and efficient organization.",
+      "points": [
+        "For schools and groups",
+        "Quick organization",
+        "Affordable pricing",
+        "Full-day program",
+        "All logistics handled"
+      ],
+      "cta": "View One-Day Trips"
+    },
+    "multiday": {
+      "title": "Multi-Day Trips",
+      "description": "Comprehensive multi-day trips with transport, accommodation, meals and guide support. We organize everything from start to finish.",
+      "points": [
+        "Coach transport",
+        "Accommodation",
+        "Meals (HB/FB)",
+        "Day-by-day program",
+        "Support throughout"
+      ],
+      "cta": "View Multi-Day Trips"
+    }
+  },
+  "current_offers": {
+    "section_title": "Current Trips",
+    "cta_all": "View All Offers",
+    "trips": [
+      {
+        "id": "podlasie-2026",
+        "name": "Secrets of Podlasie",
+        "subtitle": "7 days of nature, history and unique places",
+        "start_date": "2026-09-06",
+        "end_date": "2026-09-12",
+        "duration": "7 days",
+        "target": "Seniors",
+        "price": "2550 PLN / person",
+        "short_desc": "Podlasie at a comfortable pace – an ideal trip for seniors with quality transport, accommodation, HB meals and guide support.",
+        "image": "/assets/img/podlasie.jpg",
+        "slug": "secrets-of-podlasie"
+      }
+    ]
+  },
+  "past_trips_section": {
+    "title": "Past Trips",
+    "subtitle": "See where we've been and what we do for our participants",
+    "cta": "View All Stories",
+    "trips": [
+      {
+        "name": "Austria, Slovenia and Czech Republic",
+        "target": "Seniors",
+        "description": "The trip combined relaxed sightseeing, nature and culture. The program included Landskron, eagle show, Villach, Klagenfurt, Pyramidenkogel, Finsterbach waterfall, Gerlitzen, boat cruise to Ossiach, Ljubljana, Vienna and Brno.",
+        "image": "/assets/img/austria-past.jpg",
+        "slug": "austria-slovenia-czech"
+      },
+      {
+        "name": "Gdynia for Youth",
+        "target": "Youth",
+        "description": "We organized a one-day youth trip to Gdynia combining education, history and time to relax by the sea. The program included the Emigration Museum, port walk, ORP Błyskawica and beach relaxation.",
+        "image": "/assets/img/gdynia-past.jpg",
+        "slug": "gdynia-youth"
+      },
+      {
+        "name": "Kayaking on Brda River",
+        "target": "Youth",
+        "description": "For students of 1st High School in Bydgoszcz we organized a one-day kayaking trip on the Brda River from Opławiec to Zimne Wody Marina. After the active part, participants relaxed by the bonfire roasting sausages.",
+        "image": "/assets/img/brda-past.jpg",
+        "slug": "brda-kayaking"
+      }
+    ]
+  },
+  "reviews_section": {
+    "title": "Participant Reviews",
+    "subtitle": "See what participants say about our trips",
+    "cta_add": "Review Us on Google",
+    "cta_view": "View All Reviews"
+  },
+  "about": {
+    "title": "About Us",
+    "text": "Patent na Podróż is a travel agency born from a passion for active recreation, education and discovering characterful places. We organize trips for seniors, youth and organized groups. We care about the program, logistics, comfort and good atmosphere.",
+    "values": [
+      "Safety and legality",
+      "Comfortable organization",
+      "Experienced guides",
+      "Individual approach",
+      "Proven routes"
+    ]
+  },
+  "contact_section": {
+    "title": "Questions About a Trip?",
+    "subtitle": "Call or fill out a short form. We'll respond and help you choose the right trip for your group.",
+    "form_title": "Ask About a Trip",
+    "form_name": "Name and surname",
+    "form_phone": "Phone",
+    "form_email": "Email",
+    "form_trip": "Which trip interests you?",
+    "form_target": "For whom",
+    "form_target_senior": "Seniors",
+    "form_target_youth": "Youth",
+    "form_target_school": "School group",
+    "form_target_oneday": "One-day",
+    "form_target_multiday": "Multi-day",
+    "form_target_other": "Other",
+    "form_participants": "Number of participants",
+    "form_date": "Preferred date",
+    "form_message": "Message / question",
+    "form_gdpr": "I consent to the processing of my personal data for handling this inquiry in accordance with the privacy policy.",
+    "form_marketing": "I consent to receiving information about future Patent na Podróż trips (optional).",
+    "form_submit": "Send Inquiry",
+    "form_success": "Thank you for contacting us! We'll respond shortly.",
+    "form_error": "An error occurred. Please try again or call: 501 034 351"
+  },
+  "footer": {
+    "about_title": "Patent na Podróż",
+    "about_text": "We organize thoughtful trips for youth and seniors in Poland and abroad.",
+    "links_title": "Useful Links",
+    "legal_title": "Documents",
+    "contact_title": "Contact",
+    "ceotipo_label": "CEOTiPO",
+    "company_label": "Organizer",
+    "copyright": "© 2026 Patent na Podróż. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms",
+    "rodo": "GDPR",
+    "image_consent": "Image Consent"
+  },
+  "trip_detail": {
+    "back": "← Back to Offers",
+    "quick_facts": "Quick Facts",
+    "date": "Date",
+    "duration": "Duration",
+    "target": "For Whom",
+    "price": "Price",
+    "transport": "Transport",
+    "accommodation": "Accommodation",
+    "meals": "Meals",
+    "guide": "Guide",
+    "program_title": "Trip Program",
+    "included_title": "Price Includes",
+    "cta_title": "Interested?",
+    "cta_text": "Have a question or want to book? Fill out the form or call:",
+    "phone_cta": "Call: 501 034 351",
+    "form_cta": "Fill Out Form"
+  }
+}
