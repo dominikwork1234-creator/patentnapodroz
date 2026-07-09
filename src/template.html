@@ -32,6 +32,7 @@
   "inLanguage": ["pl", "en"]
 }
 </script>
+{{FAQ_JSONLD}}
 </head>
 <body>
 
@@ -61,6 +62,7 @@
         <li><a href="{{LANG_PREFIX}}#zrealizowane">{{nav.past_trips}}</a></li>
         <li><a href="{{LANG_PREFIX}}#o-nas">{{nav.about}}</a></li>
         <li><a href="{{LANG_PREFIX}}#opinie">{{nav.reviews}}</a></li>
+        <li><a href="{{LANG_PREFIX}}#faq">{{nav.faq}}</a></li>
         <li><a href="{{LANG_PREFIX}}#kontakt" class="nav-cta">{{nav.contact}}</a></li>
       </ul>
     </nav>
@@ -246,6 +248,18 @@
         <a href="{{meta.facebook}}" target="_blank" rel="noopener" class="btn btn-outline">{{reviews_section.cta_view}}</a>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="faq" id="faq">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">{{faq_section.title}}</span>
+      <h2>{{faq_section.title}}</h2>
+      <p>{{faq_section.subtitle}}</p>
+    </div>
+    <div class="faq-list">{{FAQ_ITEMS}}</div>
   </div>
 </section>
 

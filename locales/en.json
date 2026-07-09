@@ -22,7 +22,8 @@
     "reviews": "Reviews",
     "documents": "Documents",
     "contact": "Contact",
-    "back_home": "Back to homepage"
+    "back_home": "Back to homepage",
+    "faq": "FAQ"
   },
   "hero": {
     "headline": "Thoughtful Trips for Youth and Seniors",
@@ -283,5 +284,43 @@
     "title": "Terms & Conditions",
     "updated": "Last updated: July 7, 2026",
     "content_html": "<div class=\"legal-todo\">Note: this is a draft skeleton of the Terms &amp; Conditions (OWU) as a starting point. As a licensed tour operator registered with CEOTiPO, Clever Training Sp. z o.o. is subject to Polish package travel law — legal review is recommended before publishing, and the insurance/guarantee fund details (section 6 below) still need to be filled in.</div>\n\n<h2>1. General provisions</h2>\n<p>The organizer of the trips is <strong>Clever Training Sp. z o.o.</strong>, registered at ul. Wczasowa 34, Bydgoszcz, Poland, in the Polish Central Register of Tourism Organizers and Intermediaries (CEOTiPO) under number <strong>42246</strong>. Tax ID (NIP): 9532786916, REGON: 520772585, KRS: 0000941682.</p>\n<div class=\"legal-todo\">To be completed: the insurer/guarantee fund details required by Polish package travel law.</div>\n<p>These Terms &amp; Conditions govern participation in trips organized by the Organizer and form an integral part of the package travel contract.</p>\n\n<h2>2. Booking and payment</h2>\n<p>A package travel contract is concluded once signed by the participant (or their legal representative) and upon payment of a deposit or full amount as specified for the given trip. Specific payment terms (deposit amount, balance due date) are set individually per trip.</p>\n\n<h2>3. Cancellation and changes</h2>\n<p>Participants may withdraw from the contract before the trip begins. Depending on the timing of cancellation, costs actually incurred by the Organizer (e.g. deposits paid to carriers, hotels, guides) may be deducted. Specific cancellation and refund terms are provided with each offer.</p>\n\n<h2>4. Participant rights and obligations</h2>\n<p>Participants must follow the trip itinerary, instructions from the tour leader/guide, and local rules at each destination. The Organizer reserves the right to modify the itinerary for reasons beyond its control (e.g. weather, administrative decisions), while maintaining an equivalent standard of trip.</p>\n\n<h2>5. Complaints</h2>\n<p>Participants may submit a complaint about non-conformity of travel services in writing or by email (patentnapodroz@gmail.com) within a reasonable time after the trip ends. Complaints are handled in accordance with applicable law.</p>\n\n<h2>6. Financial protection</h2>\n<div class=\"legal-todo\">To be completed: name of the insurer/guarantee provider, policy number, and coverage amount — a mandatory disclosure for tour operators under Polish package travel law.</div>\n\n<h2>7. Personal data</h2>\n<p>Personal data handling is described in our <a href=\"{{PRIVACY_URL}}\">Privacy Policy</a>.</p>\n\n<h2>8. Final provisions</h2>\n<p>Matters not covered by these Terms are governed by the Polish Civil Code and the Act on Package Travel and Linked Travel Arrangements. Disputes will be resolved by the court competent for the Organizer's registered seat or the consumer's place of residence, as applicable under law.</p>"
+  },
+  "faq_section": {
+    "title": "Frequently asked questions",
+    "subtitle": "Everything worth knowing before you book a trip",
+    "items": [
+      {
+        "q": "Who are your trips for?",
+        "a": "We organize trips primarily for two groups: seniors (relaxed-pace trips with a guide) and youth (school trips, camps, team-building excursions). Every offer is labeled with its target audience."
+      },
+      {
+        "q": "How much does a trip cost?",
+        "a": "Price depends on the route, number of days, and accommodation standard. You'll find the current price for each offer in the \"Current trips\" section above — every listing shows a starting price."
+      },
+      {
+        "q": "How do I book a trip?",
+        "a": "The fastest way is through the contact form on this site — mention which offer you're interested in. You can also call us directly at +48 501 034 351."
+      },
+      {
+        "q": "Is the company licensed and safe to book with?",
+        "a": "Yes. We're registered in the Polish Central Register of Tourism Organizers and Intermediaries (CEOTiPO) under number 42246, a legal requirement for tour operators in Poland."
+      },
+      {
+        "q": "What's included in a multi-day trip?",
+        "a": "Multi-day trips include coach transport, accommodation, meals (half or full board depending on the offer), and guide support for the entire trip."
+      },
+      {
+        "q": "Can I cancel after booking?",
+        "a": "Yes, under the terms described in our Terms & Conditions — depending on how close to departure you cancel, costs already incurred by the organizer may be deducted."
+      },
+      {
+        "q": "Where do you organize trips?",
+        "a": "We run both one-day trips within Poland (e.g. Gdynia, kayak trips) and multi-day trips abroad (e.g. Austria, Slovenia, Czech Republic)."
+      },
+      {
+        "q": "How is my personal data protected?",
+        "a": "Contact form data is used solely to handle your inquiry. Full details are in our Privacy Policy."
+      }
+    ]
   }
 }

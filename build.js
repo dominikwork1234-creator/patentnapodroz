@@ -93,6 +93,27 @@ function render(template, data, lang) {
   const values = (data.about?.values || []).map(v => `<li>${v}</li>`).join('\n');
   out = out.replace(/{{ABOUT_VALUES}}/g, values);
 
+  // FAQ items
+  const faqItems = (data.faq_section?.items || []).map((item, i) => `
+    <details class="faq-item"${i === 0 ? ' open' : ''}>
+      <summary>${item.q}</summary>
+      <p>${item.a}</p>
+    </details>`).join('\n');
+  out = out.replace(/{{FAQ_ITEMS}}/g, faqItems);
+
+  // FAQPage structured data — mirrors the visible FAQ_ITEMS exactly
+  const faqEntities = (data.faq_section?.items || []).map(item => ({
+    "@type": "Question",
+    "name": item.q,
+    "acceptedAnswer": { "@type": "Answer", "text": item.a },
+  }));
+  const faqJsonLd = faqEntities.length
+    ? `<script type="application/ld+json">\n${JSON.stringify({ "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": faqEntities }, null, 2)}\n</script>`
+    : '';
+  out = out.replace(/{{FAQ_JSONLD}}/g, faqJsonLd);
+
+
+
   // Hreflang
   let hreflang = LANGUAGES.map(l => {
     const href = l === DEFAULT_LANG ? 'https://patentnapodroz.pl/' : `https://patentnapodroz.pl/${l}/`;

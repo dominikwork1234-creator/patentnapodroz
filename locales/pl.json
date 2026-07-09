@@ -22,7 +22,8 @@
     "reviews": "Opinie",
     "documents": "Dokumenty",
     "contact": "Kontakt",
-    "back_home": "Powrót na stronę główną"
+    "back_home": "Powrót na stronę główną",
+    "faq": "FAQ"
   },
   "hero": {
     "headline": "Wyjazdy z pomysłem dla młodzieży i seniorów",
@@ -283,5 +284,43 @@
     "title": "Ogólne Warunki Uczestnictwa (OWU)",
     "updated": "Ostatnia aktualizacja: 7 lipca 2026",
     "content_html": "<div class=\"legal-todo\">Uwaga: poniższy dokument to szkielet Ogólnych Warunków Uczestnictwa przygotowany jako punkt wyjścia. Jako organizator turystyki wpisany do CEOTiPO, Clever Training Sp. z o.o. podlega ustawie o imprezach turystycznych i powiązanych usługach turystycznych — przed publikacją zalecana jest weryfikacja treści przez prawnika oraz uzupełnienie numeru gwarancji ubezpieczeniowej / Turystycznego Funduszu Gwarancyjnego (patrz punkt 6 poniżej).</div>\n\n<h2>1. Postanowienia ogólne</h2>\n<p>Organizatorem imprez turystycznych jest <strong>Clever Training Sp. z o.o.</strong> z siedzibą pod adresem ul. Wczasowa 34, Bydgoszcz, wpisana do Centralnej Ewidencji Organizatorów Turystyki i Pośredników Turystycznych (CEOTiPO) pod numerem <strong>42246</strong>, NIP 9532786916, REGON 520772585, KRS 0000941682.</p>\n<div class=\"legal-todo\">Do uzupełnienia: numer i podmiot udzielający zabezpieczenia finansowego (gwarancja ubezpieczeniowa / Turystyczny Fundusz Gwarancyjny) — wymagane ustawą o imprezach turystycznych.</div>\n<p>Niniejsze Ogólne Warunki Uczestnictwa (OWU) określają zasady uczestnictwa w imprezach turystycznych organizowanych przez Organizatora i stanowią integralną część umowy o udział w imprezie turystycznej.</p>\n\n<h2>2. Zawarcie umowy i płatności</h2>\n<p>Umowa o udział w imprezie turystycznej zostaje zawarta z chwilą jej podpisania przez uczestnika (lub jego przedstawiciela ustawowego) oraz wpłaty zaliczki lub pełnej kwoty zgodnie z warunkami danej oferty. Szczegółowe warunki płatności (wysokość zaliczki, termin dopłaty) określane są indywidualnie dla każdego wyjazdu.</p>\n\n<h2>3. Rezygnacja i zmiany w umowie</h2>\n<p>Uczestnik może odstąpić od umowy przed rozpoczęciem imprezy turystycznej. W zależności od terminu rezygnacji mogą zostać potrącone koszty rzeczywiście poniesione przez Organizatora (m.in. zaliczki wpłacone przewoźnikom, hotelom, przewodnikom). Szczegółowe zasady rezygnacji i zwrotów podawane są w warunkach konkretnej oferty.</p>\n\n<h2>4. Obowiązki i prawa uczestnika</h2>\n<p>Uczestnik zobowiązany jest do przestrzegania programu imprezy, poleceń pilota/przewodnika oraz przepisów porządkowych obowiązujących w miejscach pobytu. Organizator zastrzega sobie prawo do zmiany programu z przyczyn niezależnych (np. warunki pogodowe, decyzje administracyjne), przy zachowaniu równorzędnego standardu wyjazdu.</p>\n\n<h2>5. Reklamacje</h2>\n<p>Uczestnik ma prawo złożyć reklamację dotyczącą niezgodności usług turystycznych z umową w formie pisemnej lub elektronicznej (e-mail: patentnapodroz@gmail.com) w rozsądnym terminie od zakończenia imprezy turystycznej. Organizator rozpatruje reklamacje zgodnie z obowiązującymi przepisami.</p>\n\n<h2>6. Zabezpieczenie finansowe klientów</h2>\n<div class=\"legal-todo\">Do uzupełnienia: nazwa ubezpieczyciela / podmiotu udzielającego gwarancji, numer polisy oraz suma gwarancyjna — obowiązkowa informacja dla organizatora turystyki na podstawie ustawy o imprezach turystycznych.</div>\n\n<h2>7. Dane osobowe</h2>\n<p>Zasady przetwarzania danych osobowych uczestników opisane są w <a href=\"{{PRIVACY_URL}}\">Polityce prywatności</a>.</p>\n\n<h2>8. Postanowienia końcowe</h2>\n<p>W sprawach nieuregulowanych niniejszymi OWU zastosowanie mają przepisy Kodeksu cywilnego oraz ustawy o imprezach turystycznych i powiązanych usługach turystycznych. Ewentualne spory rozstrzygane będą przez sąd właściwy dla siedziby Organizatora lub miejsca zamieszkania konsumenta, zgodnie z obowiązującymi przepisami.</p>"
+  },
+  "faq_section": {
+    "title": "Najczęściej zadawane pytania",
+    "subtitle": "Wszystko, co warto wiedzieć przed zapisaniem się na wyjazd",
+    "items": [
+      {
+        "q": "Dla kogo są wasze wyjazdy?",
+        "a": "Organizujemy wyjazdy przede wszystkim dla dwóch grup: seniorów (wyjazdy w spokojnym tempie, z opieką przewodnika) oraz młodzieży (wycieczki szkolne, obozy, wyjazdy integracyjne). Każda oferta jest oznaczona, do kogo jest skierowana."
+      },
+      {
+        "q": "Ile kosztuje wyjazd?",
+        "a": "Cena zależy od trasy, liczby dni i standardu zakwaterowania. Aktualne ceny każdej oferty znajdziesz w sekcji \"Aktualne wyjazdy\" powyżej — przy każdym wyjeździe podajemy cenę od."
+      },
+      {
+        "q": "Jak zapisać się na wyjazd?",
+        "a": "Najszybciej przez formularz kontaktowy na tej stronie — wybierz interesującą Cię ofertę i wyślij zapytanie. Możesz też zadzwonić bezpośrednio pod numer 501 034 351."
+      },
+      {
+        "q": "Czy firma jest bezpieczna i licencjonowana?",
+        "a": "Tak. Jesteśmy wpisani do Centralnej Ewidencji Organizatorów Turystyki i Pośredników Turystycznych (CEOTiPO) pod numerem 42246, co jest wymogiem prawnym dla organizatorów turystyki w Polsce."
+      },
+      {
+        "q": "Co obejmuje cena wyjazdu wielodniowego?",
+        "a": "Wyjazdy kilkudniowe obejmują transport autokarowy, zakwaterowanie, wyżywienie (HB lub FB, zależnie od oferty) oraz opiekę przewodnika przez cały czas trwania wyjazdu."
+      },
+      {
+        "q": "Czy mogę zrezygnować z wyjazdu po zapisaniu się?",
+        "a": "Tak, na zasadach opisanych w naszych Ogólnych Warunkach Uczestnictwa (OWU) — w zależności od terminu rezygnacji mogą zostać potrącone koszty już poniesione przez organizatora."
+      },
+      {
+        "q": "Dokąd organizujecie wyjazdy?",
+        "a": "Organizujemy zarówno wycieczki jednodniowe w Polsce (np. Gdynia, spływy kajakowe), jak i wyjazdy kilkudniowe za granicą (np. Austria, Słowenia, Czechy)."
+      },
+      {
+        "q": "Jak chronione są moje dane osobowe?",
+        "a": "Dane z formularza kontaktowego wykorzystujemy wyłącznie do obsługi zapytania. Pełne informacje znajdziesz w naszej Polityce prywatności."
+      }
+    ]
   }
 }
