@@ -55,7 +55,8 @@
         "Time to rest"
       ],
       "cta": "View Senior Trips",
-      "image": "/assets/img/cat-seniors.jpg"
+      "image": "/assets/img/cat-seniors.jpg",
+      "image_webp": "/assets/img/cat-seniors.webp"
     },
     "youth": {
       "title": "Youth Trips",
@@ -68,7 +69,8 @@
         "Experienced supervisors"
       ],
       "cta": "View Youth Trips",
-      "image": "/assets/img/cat-youth.jpg"
+      "image": "/assets/img/cat-youth.jpg",
+      "image_webp": "/assets/img/cat-youth.webp"
     },
     "oneday": {
       "title": "One-Day Trips",
@@ -81,7 +83,8 @@
         "All logistics handled"
       ],
       "cta": "View One-Day Trips",
-      "image": "/assets/img/cat-oneday.jpg"
+      "image": "/assets/img/cat-oneday.jpg",
+      "image_webp": "/assets/img/cat-oneday.webp"
     },
     "multiday": {
       "title": "Multi-Day Trips",
@@ -94,7 +97,8 @@
         "Support throughout"
       ],
       "cta": "View Multi-Day Trips",
-      "image": "/assets/img/cat-multiday.jpg"
+      "image": "/assets/img/cat-multiday.jpg",
+      "image_webp": "/assets/img/cat-multiday.webp"
     }
   },
   "current_offers": {

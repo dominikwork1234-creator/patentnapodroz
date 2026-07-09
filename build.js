@@ -43,7 +43,10 @@ function render(template, data, lang) {
   const offers = (data.current_offers?.trips || []).map(t => `
     <article class="offer-card">
       <div class="offer-media">
-        <img src="${t.image}" alt="${t.name}" loading="lazy">
+        <picture>
+          <source srcset="${t.image.replace(/\.jpg$/i, '.webp')}" type="image/webp">
+          <img src="${t.image}" alt="${t.name}" loading="lazy">
+        </picture>
         <span class="offer-tag">${t.target}</span>
         <span class="offer-date-chip">📅 ${t.start_date.split('-').reverse().join('.')} · ${t.duration}</span>
       </div>
@@ -63,7 +66,10 @@ function render(template, data, lang) {
   const past = (data.past_trips_section?.trips || []).map(t => `
     <article class="past-card">
       <div class="past-media">
-        <img src="${t.image}" alt="${t.name}" loading="lazy">
+        <picture>
+          <source srcset="${t.image.replace(/\.jpg$/i, '.webp')}" type="image/webp">
+          <img src="${t.image}" alt="${t.name}" loading="lazy">
+        </picture>
         <span class="past-tag">${t.target}</span>
       </div>
       <div class="past-body">

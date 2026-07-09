@@ -72,6 +72,7 @@
 <!-- ===== HERO ===== -->
 <section class="hero">
   <picture class="hero-bg">
+    <source srcset="/assets/img/hero-bg.webp" type="image/webp">
     <img src="/assets/img/hero-bg.jpg" alt="" fetchpriority="high">
   </picture>
   <div class="container hero-inner">
@@ -112,7 +113,10 @@
     </div>
     <div class="cat-grid">
       <a href="{{LANG_PREFIX}}#kontakt" class="cat-card">
-        <img src="{{audiences.seniors.image}}" alt="{{audiences.seniors.title}}" loading="lazy">
+        <picture>
+          <source srcset="{{audiences.seniors.image_webp}}" type="image/webp">
+          <img src="{{audiences.seniors.image}}" alt="{{audiences.seniors.title}}" loading="lazy">
+        </picture>
         <div class="cat-overlay"></div>
         <div class="cat-body">
           <h3>{{audiences.seniors.title}}</h3>
@@ -121,7 +125,10 @@
         </div>
       </a>
       <a href="{{LANG_PREFIX}}#kontakt" class="cat-card">
-        <img src="{{audiences.youth.image}}" alt="{{audiences.youth.title}}" loading="lazy">
+        <picture>
+          <source srcset="{{audiences.youth.image_webp}}" type="image/webp">
+          <img src="{{audiences.youth.image}}" alt="{{audiences.youth.title}}" loading="lazy">
+        </picture>
         <div class="cat-overlay"></div>
         <div class="cat-body">
           <h3>{{audiences.youth.title}}</h3>
@@ -130,7 +137,10 @@
         </div>
       </a>
       <a href="{{LANG_PREFIX}}#kontakt" class="cat-card">
-        <img src="{{audiences.oneday.image}}" alt="{{audiences.oneday.title}}" loading="lazy">
+        <picture>
+          <source srcset="{{audiences.oneday.image_webp}}" type="image/webp">
+          <img src="{{audiences.oneday.image}}" alt="{{audiences.oneday.title}}" loading="lazy">
+        </picture>
         <div class="cat-overlay"></div>
         <div class="cat-body">
           <h3>{{audiences.oneday.title}}</h3>
@@ -139,7 +149,10 @@
         </div>
       </a>
       <a href="{{LANG_PREFIX}}#kontakt" class="cat-card">
-        <img src="{{audiences.multiday.image}}" alt="{{audiences.multiday.title}}" loading="lazy">
+        <picture>
+          <source srcset="{{audiences.multiday.image_webp}}" type="image/webp">
+          <img src="{{audiences.multiday.image}}" alt="{{audiences.multiday.title}}" loading="lazy">
+        </picture>
         <div class="cat-overlay"></div>
         <div class="cat-body">
           <h3>{{audiences.multiday.title}}</h3>
@@ -197,7 +210,10 @@
 <section class="about" id="o-nas">
   <div class="container about-inner">
     <div class="about-img">
-      <img src="/assets/img/about-photo.jpg" alt="{{about.title}}" loading="lazy">
+      <picture>
+        <source srcset="/assets/img/about-photo.webp" type="image/webp">
+        <img src="/assets/img/about-photo.jpg" alt="{{about.title}}" loading="lazy">
+      </picture>
       <div class="about-badge-card">
         <strong>CEOTiPO {{meta.ceotipo}}</strong>
         <span>{{footer.company_label}}: {{meta.company_name}}</span>
