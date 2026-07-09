@@ -287,3 +287,11 @@ section{padding:88px 0}
 .faq-item summary::after{content:"+";font-size:1.4rem;font-weight:400;color:var(--orange);flex-shrink:0;transition:transform .2s ease}
 .faq-item[open] summary::after{transform:rotate(45deg)}
 .faq-item p{color:var(--gray);line-height:1.7;margin-top:12px}
+
+/* ===== Cookie consent banner ===== */
+.cookie-banner{position:fixed;left:0;right:0;bottom:0;z-index:999;background:var(--navy);color:#fff;padding:18px 24px;box-shadow:0 -4px 20px rgba(0,0,0,.15)}
+.cookie-banner-inner{max-width:1220px;margin:0 auto;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px}
+.cookie-banner p{margin:0;font-size:14px;line-height:1.5;color:#e8ecf3;max-width:640px}
+.cookie-banner a{color:#fff;text-decoration:underline}
+.cookie-banner-actions{display:flex;gap:10px;flex-shrink:0}
+.btn-sm{padding:9px 18px;font-size:14px}

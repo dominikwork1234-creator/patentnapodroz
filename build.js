@@ -112,6 +112,14 @@ function render(template, data, lang) {
     : '';
   out = out.replace(/{{FAQ_JSONLD}}/g, faqJsonLd);
 
+  // Google Search Console verification meta tag — only emit if a real value is configured
+  const gscValue = data.analytics?.gsc_verification || '';
+  const gscTag = (gscValue && gscValue.indexOf('_HERE') === -1)
+    ? `<meta name="google-site-verification" content="${gscValue}">`
+    : '<!-- Search Console not yet configured: see analytics.gsc_verification in locales/*.json -->';
+  out = out.replace(/{{GSC_META_TAG}}/g, gscTag);
+
+
 
 
   // Hreflang

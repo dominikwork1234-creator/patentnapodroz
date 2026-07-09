@@ -42,3 +42,51 @@ if (form) {
     btn.disabled = false;
   });
 }
+
+// ---- Cookie consent + GA4 (only loads analytics after explicit consent) ----
+(function () {
+  var CONSENT_KEY = 'cookie_consent';
+  var cfg = window.__SITE_CONFIG__ || {};
+  var gaId = cfg.gaId || '';
+  var hasRealGaId = gaId && gaId.indexOf('_HERE') === -1;
+
+  function loadGA() {
+    if (!hasRealGaId || window.__gaLoaded) return;
+    window.__gaLoaded = true;
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=' + gaId;
+    document.head.appendChild(s);
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function () { window.dataLayer.push(arguments); };
+    window.gtag('js', new Date());
+    window.gtag('config', gaId, { anonymize_ip: true });
+  }
+
+  var banner = document.getElementById('cookieBanner');
+  var consent = null;
+  try { consent = localStorage.getItem(CONSENT_KEY); } catch (e) {}
+
+  if (consent === 'granted') {
+    loadGA();
+  } else if (consent !== 'denied' && banner && hasRealGaId) {
+    // Only bother showing the banner once there's actually something to consent to.
+    banner.hidden = false;
+  }
+
+  var acceptBtn = document.getElementById('cookieAccept');
+  var rejectBtn = document.getElementById('cookieReject');
+  if (acceptBtn) {
+    acceptBtn.addEventListener('click', function () {
+      try { localStorage.setItem(CONSENT_KEY, 'granted'); } catch (e) {}
+      if (banner) banner.hidden = true;
+      loadGA();
+    });
+  }
+  if (rejectBtn) {
+    rejectBtn.addEventListener('click', function () {
+      try { localStorage.setItem(CONSENT_KEY, 'denied'); } catch (e) {}
+      if (banner) banner.hidden = true;
+    });
+  }
+})();
