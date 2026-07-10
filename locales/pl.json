@@ -2,7 +2,7 @@
   "meta": {
     "site_name": "Patent na Podróż",
     "site_description": "Organizujemy wyjazdy z pomysłem dla młodzieży i seniorów – jednodniowe i kilkudniowe wycieczki w Polsce i za granicą z komfortowym transportem i opieką.",
-    "og_image": "/assets/img/og-card.jpg",
+    "og_image": "https://patentnapodroz.pl/assets/img/og-card.jpg",
     "phone": "501 034 351",
     "email": "patentnapodroz@gmail.com",
     "facebook": "https://www.facebook.com/patentnapodroz",
@@ -117,7 +117,21 @@
         "price": "2550 zł / os.",
         "short_desc": "Podlasie na spokojnie – idealny wyjazd dla seniorów z komfortowym transportem, zakwaterowaniem, wyżywieniem HB i opieką przewodnika.",
         "image": "/assets/img/podlasie.jpg",
-        "slug": "sekrety-podlasia"
+        "slug": "sekrety-podlasia",
+        "transport": "Komfortowy autokar",
+        "accommodation": "Sprawdzone obiekty noclegowe",
+        "meals": "Wyżywienie HB (śniadania i obiadokolacje)",
+        "guide": "Opieka przewodnika przez cały wyjazd",
+        "included": [
+          "Transport autokarowy na całej trasie",
+          "6 noclegów",
+          "Wyżywienie HB",
+          "Opieka pilota-przewodnika",
+          "Ubezpieczenie",
+          "Podatek VAT"
+        ],
+        "program_note": "Szczegółowy program dnia po dniu wyślemy po zapytaniu – zostaw kontakt przez formularz lub zadzwoń.",
+        "long_desc": "Podlasie to kierunek, który zaskakuje: dzika przyroda, wielokulturowa historia i kuchnia, o której się nie zapomina. Przez 7 dni odkrywamy region w spokojnym tempie dopasowanym do grupy seniorów – z komfortowym transportem, sprawdzonymi noclegami, wyżywieniem HB i przewodnikiem obecnym przez cały wyjazd."
       }
     ]
   },
@@ -303,7 +317,7 @@
       },
       {
         "q": "Czy firma jest bezpieczna i licencjonowana?",
-        "a": "Tak. Jesteśmy wpisani do Centralnej Ewidencji Organizatorów Turystyki i Pośredników Turystycznych (CEOTiPO) pod numerem 42246, co jest wymogiem prawnym dla organizatorów turystyki w Polsce."
+        "a": "Tak. Jesteśmy wpisani do Centralnej Ewidencji Organizatorów Turystyki i Przedsiębiorców Ułatwiających Nabywanie Powiązanych Usług Turystycznych (CEOTiPO) pod numerem 42246, co jest wymogiem prawnym dla organizatorów turystyki w Polsce."
       },
       {
         "q": "Co obejmuje cena wyjazdu wielodniowego?",
@@ -332,5 +346,341 @@
     "link": "Dowiedz się więcej",
     "accept": "Akceptuję",
     "reject": "Odrzuć"
-  }
+  },
+  "category_pages": [
+    {
+      "slug": "wycieczki-jednodniowe",
+      "meta_title": "Wycieczki jednodniowe dla grup, szkół i seniorów | Patent na Podróż",
+      "meta_description": "Organizujemy wycieczki jednodniowe z Bydgoszczy i okolic – dla szkół, seniorów i grup zorganizowanych. Transport, program i opieka w cenie. Sprawdź!",
+      "h1": "Wycieczki jednodniowe dla grup, szkół i seniorów",
+      "lead": "Jeden dzień wystarczy, żeby zobaczyć coś nowego, zintegrować grupę i naładować baterie. Organizujemy wycieczki jednodniowe od A do Z: transport, program, bilety wstępu i opieka pilota – Ty tylko wsiadasz do autokaru.",
+      "image": "/assets/img/cat-oneday.jpg",
+      "sections": [
+        {
+          "h2": "Jak wygląda wycieczka jednodniowa z Patent na Podróż?",
+          "text": "Zaczynamy od rozmowy o Twojej grupie: wiek uczestników, zainteresowania, budżet i miejsce wyjazdu. Na tej podstawie proponujemy gotowy program – np. Gdynię z Muzeum Emigracji i ORP Błyskawica, spływ kajakowy Brdą albo zwiedzanie z przewodnikiem połączone z czasem wolnym. Zapewniamy komfortowy autokar, ubezpieczenie, bilety wstępu i opiekę na całej trasie. Cena jest znana z góry – bez ukrytych kosztów."
+        },
+        {
+          "h2": "Dla kogo organizujemy wyjazdy jednodniowe?",
+          "text": "Najczęściej goszczą u nas grupy szkolne (wycieczki edukacyjne i integracyjne), grupy seniorów (spokojniejsze tempo, wygodna logistyka) oraz firmy i stowarzyszenia. Program zawsze dopasowujemy do wieku i możliwości uczestników – inna trasa sprawdzi się dla klasy siódmej, inna dla klubu seniora."
+        },
+        {
+          "h2": "Skąd wyjeżdżamy?",
+          "text": "Bazujemy w Bydgoszczy i województwie kujawsko-pomorskim, ale podstawiamy autokar także w innych miastach regionu – Toruniu, Inowrocławiu, Grudziądzu czy Włocławku. Kierunki dobieramy tak, aby całość zamknęła się wygodnie w jednym dniu."
+        }
+      ],
+      "points": [
+        "Transport, bilety i opieka w cenie",
+        "Program dopasowany do grupy",
+        "Wyjazd z Bydgoszczy i regionu",
+        "Sprawna organizacja od A do Z",
+        "Legalny organizator – CEOTiPO 42246"
+      ],
+      "faq": [
+        {
+          "q": "Ile kosztuje wycieczka jednodniowa?",
+          "a": "Cena zależy od trasy, liczby uczestników i programu – zwykle to od kilkudziesięciu do ok. 200 zł od osoby. Po krótkiej rozmowie przygotujemy bezpłatną wycenę dla Twojej grupy."
+        },
+        {
+          "q": "Jaka jest minimalna liczba uczestników?",
+          "a": "Najlepiej sprawdzają się grupy od ok. 25 osób – wtedy koszt autokaru rozkłada się korzystnie. Mniejsze grupy również obsługujemy, po indywidualnej wycenie."
+        },
+        {
+          "q": "Czy organizujecie wycieczki jednodniowe dla szkół?",
+          "a": "Tak – wycieczki szkolne to jedna z naszych specjalności. Zapewniamy program edukacyjny, opiekę i dokumentację wymaganą przez szkołę."
+        }
+      ],
+      "related": [
+        "wycieczki-szkolne",
+        "wycieczki-dla-seniorow",
+        "wyjazdy-kilkudniowe"
+      ]
+    },
+    {
+      "slug": "wycieczki-dla-seniorow",
+      "meta_title": "Wycieczki dla seniorów – wyjazdy w spokojnym tempie | Patent na Podróż",
+      "meta_description": "Wycieczki i wyjazdy dla seniorów w Polsce i za granicą. Spokojne tempo, komfortowy transport, opieka przewodnika i program dopasowany do grupy.",
+      "h1": "Wycieczki dla seniorów – podróże w spokojnym tempie",
+      "lead": "Podróżowanie nie ma górnej granicy wieku – ma tylko wymagać dobrej organizacji. Nasze wycieczki dla seniorów to spokojne tempo zwiedzania, wygodny transport, sprawdzone noclegi i przewodnik, który zawsze jest obok.",
+      "image": "/assets/img/cat-seniors.jpg",
+      "sections": [
+        {
+          "h2": "Co wyróżnia nasze wyjazdy dla seniorów?",
+          "text": "Program układamy tak, aby nikt nie musiał się spieszyć: krótsze odcinki zwiedzania, przerwy na kawę, czas na odpoczynek i posiłki bez pośpiechu. Autokar podjeżdża możliwie blisko atrakcji, a przewodnik dba o grupę od wyjazdu do powrotu. Na wyjazdach kilkudniowych zapewniamy zakwaterowanie i wyżywienie HB lub FB."
+        },
+        {
+          "h2": "Przykładowe kierunki",
+          "text": "Nasi seniorzy zwiedzali już Austrię, Słowenię i Czechy – z Lublaną, Wiedniem i rejsami po alpejskich jeziorach – a najbliższy wyjazd to „Sekrety Podlasia\": 7 dni natury, historii i lokalnych smaków. Organizujemy też krótsze wycieczki jednodniowe po Polsce, idealne na początek przygody z grupowym podróżowaniem."
+        },
+        {
+          "h2": "Bezpieczeństwo przede wszystkim",
+          "text": "Jesteśmy legalnym organizatorem turystyki (CEOTiPO 42246) z gwarancją ubezpieczeniową UNIQA – wpłaty uczestników są chronione zgodnie z ustawą o imprezach turystycznych. Każdy uczestnik otrzymuje umowę i jasne warunki uczestnictwa."
+        }
+      ],
+      "points": [
+        "Spokojne tempo zwiedzania",
+        "Komfortowy transport i noclegi",
+        "Opieka przewodnika przez cały wyjazd",
+        "Czas na odpoczynek i lokalne smaki",
+        "Gwarancja ubezpieczeniowa UNIQA"
+      ],
+      "faq": [
+        {
+          "q": "Czy wyjazdy są odpowiednie dla osób mniej sprawnych ruchowo?",
+          "a": "Program prowadzimy w spokojnym tempie i informujemy z góry o wymagającej trasie. Przy zapisie zapytamy o potrzeby grupy i doradzimy, czy dany wyjazd będzie komfortowy."
+        },
+        {
+          "q": "Czy mogę pojechać sam/sama, nie mając grupy?",
+          "a": "Tak – na wyjazdy otwarte (np. Sekrety Podlasia) zapisują się osoby indywidualne i pary. Grupa integruje się zwykle pierwszego dnia."
+        },
+        {
+          "q": "Co obejmuje cena wyjazdu dla seniorów?",
+          "a": "Na wyjazdach kilkudniowych: transport autokarowy, noclegi, wyżywienie HB lub FB, opiekę przewodnika oraz ubezpieczenie. Szczegóły podajemy przy każdej ofercie."
+        }
+      ],
+      "related": [
+        "wczasy-dla-seniorow",
+        "wyjazdy-kilkudniowe",
+        "wycieczki-jednodniowe"
+      ]
+    },
+    {
+      "slug": "wczasy-dla-seniorow",
+      "meta_title": "Wczasy dla seniorów – dłuższy wypoczynek z opieką | Patent na Podróż",
+      "meta_description": "Wczasy dla seniorów z transportem, wyżywieniem i opieką. Dłuższy wypoczynek w jednym miejscu, bez logistycznych zmartwień. Zapytaj o termin!",
+      "h1": "Wczasy dla seniorów – wypoczynek bez zmartwień",
+      "lead": "Wczasy to inny rytm niż wycieczka objazdowa: jedno sprawdzone miejsce, wygodny pokój, pełne wyżywienie i program „bez obowiązku\". Odpoczywasz, a my zajmujemy się całą resztą.",
+      "image": "/assets/img/cat-seniors.jpg",
+      "sections": [
+        {
+          "h2": "Czym różnią się wczasy od wycieczki?",
+          "text": "Na wczasach zatrzymujemy się w jednym ośrodku na dłużej – zwykle od 7 dni. Zamiast codziennego pakowania walizki masz stały pokój, regularne posiłki i czas dla siebie. Do tego proponujemy fakultatywne wyjścia: spacery z przewodnikiem, wieczorki integracyjne czy krótkie wycieczki po okolicy – zawsze do wyboru, nigdy z przymusu."
+        },
+        {
+          "h2": "Pełna organizacja od progu do progu",
+          "text": "Zapewniamy transport z miejsca zbiórki, zakwaterowanie w sprawdzonych obiektach, wyżywienie oraz opiekę rezydenta. Dla wielu naszych uczestników to pierwszy wyjazd bez rodziny od lat – dbamy, żeby był udany i bezstresowy."
+        }
+      ],
+      "points": [
+        "Jeden ośrodek – zero przeprowadzek",
+        "Transport z miejsca zbiórki",
+        "Pełne wyżywienie",
+        "Fakultatywny program i animacje",
+        "Opieka rezydenta na miejscu"
+      ],
+      "faq": [
+        {
+          "q": "Jak długo trwają wczasy dla seniorów?",
+          "a": "Standardowo 7 dni, ale organizujemy też turnusy dłuższe – w zależności od miejsca i zainteresowania grupy."
+        },
+        {
+          "q": "Czy na wczasach jest program zorganizowany?",
+          "a": "Tak, ale fakultatywny – proponujemy spacery, wycieczki po okolicy i wieczorki, a każdy uczestnik sam decyduje, z czego korzysta."
+        },
+        {
+          "q": "Kiedy najbliższy turnus?",
+          "a": "Terminy ogłaszamy na stronie w sekcji Aktualne wyjazdy. Zostaw kontakt przez formularz, a powiadomimy Cię o najbliższym naborze."
+        }
+      ],
+      "related": [
+        "wycieczki-dla-seniorow",
+        "wyjazdy-kilkudniowe"
+      ]
+    },
+    {
+      "slug": "wycieczki-szkolne",
+      "meta_title": "Wycieczki szkolne z programem edukacyjnym | Patent na Podróż",
+      "meta_description": "Organizujemy wycieczki szkolne jedno- i kilkudniowe: program edukacyjny, transport, ubezpieczenie i pełna dokumentacja dla szkoły. Bydgoszcz i region.",
+      "h1": "Wycieczki szkolne, które uczniowie zapamiętają",
+      "lead": "Dobra wycieczka szkolna łączy wiedzę z przygodą – i nie zostawia nauczyciela samego z logistyką. Bierzemy na siebie transport, program, bilety, ubezpieczenie i dokumentację, którą wymaga szkoła.",
+      "image": "/assets/img/cat-youth.jpg",
+      "sections": [
+        {
+          "h2": "Program edukacyjny bez nudy",
+          "text": "Nasze trasy projektujemy pod podstawę programową i wiek uczniów. Przykład? Jednodniowa wycieczka do Gdyni: Muzeum Emigracji, spacer po porcie, wejście na ORP Błyskawica i czas na plaży – historia, geografia i integracja w jednym dniu. Dla klas aktywnych polecamy spływ kajakowy Brdą z pełnym zabezpieczeniem."
+        },
+        {
+          "h2": "Wsparcie dla nauczyciela-organizatora",
+          "text": "Przygotowujemy komplet dokumentów: umowę, listy uczestników, potwierdzenia ubezpieczenia i program dla dyrekcji. Jako wpisany do rejestru organizator turystyki (CEOTiPO 42246) spełniamy wymogi formalne, o które pyta każda szkoła. Nauczyciel dostaje od nas jeden kontakt do wszystkiego."
+        },
+        {
+          "h2": "Bezpieczeństwo i opieka",
+          "text": "Współpracujemy z doświadczonymi opiekunami i pilotami, a przy aktywnościach specjalnych (np. kajaki) z instruktorami. Autokary spełniają wymogi przewozu dzieci i młodzieży."
+        }
+      ],
+      "points": [
+        "Program pod podstawę programową",
+        "Komplet dokumentów dla szkoły",
+        "Ubezpieczenie NNW w cenie",
+        "Doświadczeni opiekunowie i piloci",
+        "Jedno- i kilkudniowe formaty"
+      ],
+      "faq": [
+        {
+          "q": "Jak wcześnie trzeba rezerwować wycieczkę szkolną?",
+          "a": "Optymalnie 2–3 miesiące przed terminem – szczególnie na maj i czerwiec. Krótsze terminy też realizujemy, w miarę dostępności."
+        },
+        {
+          "q": "Czy przygotowujecie dokumenty wymagane przez szkołę?",
+          "a": "Tak – dostarczamy umowę, program, potwierdzenie ubezpieczenia i dokumenty organizatora, gotowe do przedstawienia dyrekcji i rodzicom."
+        },
+        {
+          "q": "Ilu opiekunów zapewnia szkoła, a ilu wy?",
+          "a": "Opiekę wychowawczą zapewnia szkoła zgodnie z przepisami; my dokładamy pilota/przewodnika oraz – przy aktywnościach – instruktorów."
+        }
+      ],
+      "related": [
+        "obozy-mlodziezowe",
+        "wycieczki-jednodniowe"
+      ]
+    },
+    {
+      "slug": "obozy-mlodziezowe",
+      "meta_title": "Obozy młodzieżowe – aktywne wakacje z opieką | Patent na Podróż",
+      "meta_description": "Obozy młodzieżowe łączące przygodę, integrację i bezpieczną organizację. Doświadczona kadra, legalny organizator, pełne zaplecze. Zapytaj o termin!",
+      "h1": "Obozy młodzieżowe – przygoda, integracja, bezpieczeństwo",
+      "lead": "Obóz to dla młodego człowieka coś więcej niż wakacje: samodzielność, nowe przyjaźnie i przygody, które pamięta się latami. My dbamy o to, żeby rodzice mieli spokojną głowę, a uczestnicy – najlepszy tydzień roku.",
+      "image": "/assets/img/cat-youth.jpg",
+      "sections": [
+        {
+          "h2": "Jak wyglądają nasze obozy?",
+          "text": "Program budujemy wokół aktywności: sporty wodne, turystyka, gry terenowe i warsztaty, przeplatane czasem na integrację. Dzień ma stały rytm – zajęcia, posiłki, odpoczynek – prowadzony przez doświadczoną kadrę wychowawców i instruktorów."
+        },
+        {
+          "h2": "Bezpieczeństwo, które można sprawdzić",
+          "text": "Jesteśmy legalnym organizatorem turystyki (CEOTiPO 42246) z gwarancją ubezpieczeniową UNIQA. Obozy zgłaszamy w bazie wypoczynku MEN, uczestnicy są ubezpieczeni NNW, a kadra spełnia wymogi ustawowe. Rodzice otrzymują od nas jasne warunki, program i kontakt do kierownika wypoczynku."
+        },
+        {
+          "h2": "Dla kogo?",
+          "text": "Prowadzimy obozy dla młodzieży szkolnej – zarówno nabory otwarte, jak i wyjazdy zamknięte dla klas, klubów sportowych czy parafii. Program dopasowujemy do wieku i charakteru grupy."
+        }
+      ],
+      "points": [
+        "Zgłoszenie w bazie wypoczynku MEN",
+        "Doświadczona kadra wychowawców",
+        "Ubezpieczenie NNW uczestników",
+        "Aktywny, przemyślany program",
+        "Gwarancja ubezpieczeniowa UNIQA"
+      ],
+      "faq": [
+        {
+          "q": "Czy obóz jest zgłaszany do kuratorium?",
+          "a": "Tak – każdy wypoczynek zgłaszamy w bazie MEN zgodnie z przepisami o organizacji wypoczynku dzieci i młodzieży."
+        },
+        {
+          "q": "Jaki jest wiek uczestników?",
+          "a": "Standardowo młodzież szkolna – dokładny przedział podajemy przy każdym naborze. Organizujemy też obozy zamknięte dla konkretnych grup."
+        },
+        {
+          "q": "Jak wygląda kontakt z dzieckiem podczas obozu?",
+          "a": "Ustalamy jasne zasady kontaktu telefonicznego, a kierownik wypoczynku jest dostępny dla rodziców przez cały turnus."
+        }
+      ],
+      "related": [
+        "wycieczki-szkolne",
+        "wyjazdy-kilkudniowe"
+      ]
+    },
+    {
+      "slug": "wyjazdy-kilkudniowe",
+      "meta_title": "Wyjazdy kilkudniowe dla grup – Polska i zagranica | Patent na Podróż",
+      "meta_description": "Kompleksowe wyjazdy kilkudniowe: transport, noclegi, wyżywienie i przewodnik w cenie. Polska i zagranica, grupy zorganizowane, seniorzy, młodzież.",
+      "h1": "Wyjazdy kilkudniowe – wszystko w cenie, od A do Z",
+      "lead": "Kilka dni to czas, w którym podróż zaczyna smakować naprawdę. Nasze wyjazdy wielodniowe obejmują transport, noclegi, wyżywienie i opiekę przewodnika – wszystko w jednej, znanej z góry cenie.",
+      "image": "/assets/img/cat-multiday.jpg",
+      "sections": [
+        {
+          "h2": "Co obejmuje wyjazd kilkudniowy?",
+          "text": "Standardowo: przejazd komfortowym autokarem, zakwaterowanie w sprawdzonych obiektach, wyżywienie HB lub FB, bilety wstępu według programu i opiekę pilota-przewodnika od pierwszego do ostatniego dnia. Uczestnik przyjeżdża z walizką – resztą zajmujemy się my."
+        },
+        {
+          "h2": "Polska i zagranica",
+          "text": "Realizowaliśmy m.in. wyjazd Austria–Słowenia–Czechy (Lublana, Wiedeń, Brno, alpejskie jeziora) oraz krajowe trasy jak 7-dniowe „Sekrety Podlasia\". Kierunek dobieramy do charakteru grupy: przyroda, historia, miasta czy mix wszystkiego."
+        },
+        {
+          "h2": "Dla grup zorganizowanych i uczestników indywidualnych",
+          "text": "Organizujemy zarówno wyjazdy zamknięte (firmy, stowarzyszenia, kluby seniora, parafie), jak i nabory otwarte, na które można zapisać się pojedynczo. Grupa zorganizowana może zamówić trasę „szytą na miarę\"."
+        }
+      ],
+      "points": [
+        "Transport + noclegi + wyżywienie w cenie",
+        "Pilot-przewodnik przez cały wyjazd",
+        "Polska i zagranica",
+        "Trasy szyte na miarę dla grup",
+        "Gwarancja ubezpieczeniowa UNIQA"
+      ],
+      "faq": [
+        {
+          "q": "Jak liczona jest cena wyjazdu kilkudniowego?",
+          "a": "Cena za osobę zależy od trasy, liczby dni, standardu noclegów i wielkości grupy. Przy każdej ofercie podajemy cenę „od\" i dokładny zakres świadczeń."
+        },
+        {
+          "q": "Czy możecie zorganizować wyjazd tylko dla naszej grupy?",
+          "a": "Tak – wyjazdy zamknięte dla firm, stowarzyszeń i klubów to duża część naszej działalności. Przygotujemy trasę i wycenę pod Waszą grupę."
+        },
+        {
+          "q": "Jakie dokumenty są potrzebne na wyjazd zagraniczny?",
+          "a": "W krajach UE wystarczy dowód osobisty. O wszystkich wymaganiach informujemy przed wyjazdem."
+        }
+      ],
+      "related": [
+        "wycieczki-dla-seniorow",
+        "obozy-mlodziezowe",
+        "wycieczki-jednodniowe"
+      ]
+    }
+  ],
+  "onas_page": {
+    "slug": "o-nas",
+    "meta_title": "O nas – Patent na Podróż | Biuro podróży Bydgoszcz",
+    "meta_description": "Poznaj Patent na Podróż – biuro podróży z Bydgoszczy organizujące wyjazdy dla seniorów, młodzieży i grup. Legalny organizator turystyki, CEOTiPO 42246.",
+    "h1": "Kim jesteśmy",
+    "lead": "Patent na Podróż to biuro podróży tworzone z pasji do aktywnego wypoczynku, edukacji i odkrywania miejsc z charakterem. Organizujemy wyjazdy dla seniorów, młodzieży i grup zorganizowanych. Dbamy o program, logistykę, komfort i dobrą atmosferę.",
+    "sections": [
+      {
+        "h2": "Dlaczego „Patent na Podróż\"?",
+        "text": "Bo na dobrą podróż naprawdę jest patent: przemyślany program, sprawna logistyka i ludzie, którzy wiedzą, co robią. Zamiast masowej turystyki proponujemy wyjazdy z charakterem – takie, z których wraca się z historiami, nie tylko ze zdjęciami."
+      },
+      {
+        "h2": "Legalnie i bezpiecznie",
+        "text": "Działamy jako Clever Training Sp. z o.o., wpisana do Centralnej Ewidencji Organizatorów Turystyki pod numerem 42246, z gwarancją ubezpieczeniową UNIQA S.A. Twoje wpłaty są chronione zgodnie z ustawą o imprezach turystycznych."
+      }
+    ]
+  },
+  "kontakt_page": {
+    "slug": "kontakt",
+    "meta_title": "Kontakt – Patent na Podróż | Zapytaj o wyjazd",
+    "meta_description": "Skontaktuj się z Patent na Podróż: telefon 501 034 351, formularz online. Pomożemy dobrać wycieczkę dla Twojej grupy – seniorzy, szkoły, firmy.",
+    "h1": "Skontaktuj się z nami",
+    "lead": "Masz pytanie o wyjazd albo chcesz wycenę dla swojej grupy? Zadzwoń lub napisz – odpowiadamy zwykle tego samego dnia roboczego."
+  },
+  "case_pages": [
+    {
+      "slug": "austria-slowenia-czechy",
+      "target": "Seniorzy",
+      "image": "/assets/img/austria-past.jpg",
+      "meta_title": "Austria, Słowenia i Czechy – relacja z wyjazdu dla seniorów",
+      "meta_description": "Relacja z kilkudniowego wyjazdu seniorów: Lublana, Wiedeń, Brno, alpejskie jeziora i pokaz orłów. Zobacz, jak wyglądają nasze wycieczki zagraniczne.",
+      "h1": "Austria, Słowenia i Czechy – trzy kraje w spokojnym tempie",
+      "body": "Ten wyjazd pokazał, że zagraniczna trasa objazdowa może być komfortowa także dla seniorów. Program połączył spokojne zwiedzanie, przyrodę i kulturę: zamek Landskron z pokazem ptaków drapieżnych, Villach i Klagenfurt, wieżę widokową Pyramidenkogel nad jeziorem Wörthersee, wodospad Finsterbach, panoramy z Gerlitzen oraz rejs statkiem do opactwa Ossiach. W drodze powrotnej uczestnicy zwiedzili Lublanę, Wiedeń i Brno.\n\nKażdy dzień miał przemyślany rytm: zwiedzanie przeplatane przerwami na kawę i lokalne smaki, a autokar podjeżdżał możliwie blisko atrakcji. Nad całością czuwał przewodnik obecny z grupą od wyjazdu do powrotu."
+    },
+    {
+      "slug": "gdynia-dla-mlodziezy",
+      "target": "Młodzież",
+      "image": "/assets/img/gdynia-past.jpg",
+      "meta_title": "Gdynia dla młodzieży – relacja z wycieczki szkolnej",
+      "meta_description": "Jednodniowa wycieczka młodzieżowa do Gdyni: Muzeum Emigracji, ORP Błyskawica, port i plaża. Zobacz, jak łączymy edukację z integracją.",
+      "h1": "Gdynia dla młodzieży – historia, morze i integracja w jeden dzień",
+      "body": "Jednodniowa wycieczka do Gdyni udowodniła, że nie trzeba tygodnia, aby połączyć edukację z wypoczynkiem. Młodzież zwiedziła Muzeum Emigracji – jedno z najciekawiej opowiedzianych muzeów w Polsce – przeszła szlakiem gdyńskiego portu i weszła na pokład niszczyciela ORP Błyskawica.\n\nPo części edukacyjnej przyszedł czas na odpoczynek nad morzem i integrację na plaży miejskiej. Całość zamknęła się w jednym dniu, z komfortowym transportem i opieką na całej trasie – dokładnie tak, jak lubią to nauczyciele-organizatorzy."
+    },
+    {
+      "slug": "splyw-kajakowy-brda",
+      "target": "Młodzież",
+      "image": "/assets/img/brda-past.jpg",
+      "meta_title": "Spływ kajakowy Brdą – relacja z aktywnej wycieczki szkolnej",
+      "meta_description": "Spływ kajakowy rzeką Brdą dla młodzieży szkolnej: instruktorzy, pełne zabezpieczenie i świetna integracja. Zobacz relację z wyjazdu.",
+      "h1": "Spływ kajakowy Brdą – aktywna integracja na wodzie",
+      "body": "Brda to jedna z najpiękniejszych rzek kajakowych w Polsce – i świetny teren na pierwszy spływ dla młodzieży. Uczestnicy przeszli krótkie szkolenie z instruktorami, otrzymali pełne wyposażenie (kajaki, wiosła, kapoki) i ruszyli na trasę dobraną do możliwości grupy.\n\nSpływ zabezpieczali doświadczeni instruktorzy, a na mecie czekał czas na wspólne ognisko i odpoczynek. Tego typu wyjazd doskonale sprawdza się jako aktywna alternatywa dla klasycznej wycieczki szkolnej – uczy współpracy i zostaje w pamięci na długo."
+    }
+  ]
 }

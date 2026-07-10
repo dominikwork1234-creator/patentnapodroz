@@ -3,10 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>{{LEGAL_PAGE.title}} — {{meta.site_name}}</title>
-<meta name="description" content="{{LEGAL_PAGE.title}} — {{meta.site_name}}">
-<meta name="robots" content="noindex,follow">
-{{HREFLANG_TAGS}}
+<title>{{SUBPAGE_TITLE}}</title>
+<meta name="description" content="{{SUBPAGE_DESC}}">
+<meta property="og:title" content="{{SUBPAGE_TITLE}}">
+<meta property="og:description" content="{{SUBPAGE_DESC}}">
+<meta property="og:image" content="{{meta.og_image}}">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{SUBPAGE_URL}}">
+<link rel="canonical" href="{{SUBPAGE_URL}}">
+{{SUBPAGE_JSONLD}}
 <link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg">
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32x32.png">
@@ -53,15 +58,8 @@
   </div>
 </header>
 
-<!-- ===== LEGAL CONTENT ===== -->
-<main class="legal-page">
-  <div class="container">
-    <a href="{{LANG_PREFIX}}" class="legal-back">← {{nav.back_home}}</a>
-    <h1>{{LEGAL_PAGE.title}}</h1>
-    <p class="legal-updated">{{LEGAL_PAGE.updated}}</p>
-    <div class="legal-content">{{LEGAL_PAGE.content_html}}</div>
-  </div>
-</main>
+<!-- ===== SUBPAGE CONTENT ===== -->
+{{SUBPAGE_BODY}}
 
 <!-- ===== FOOTER ===== -->
 <footer class="site-footer">
