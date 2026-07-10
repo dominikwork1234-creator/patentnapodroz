@@ -181,6 +181,9 @@ for (const lang of LANGUAGES) {
 copyDir('assets', path.join(DIST, 'assets'));
 console.log('  ✓ assets/');
 
+fs.copyFileSync('src/404.html', path.join(DIST, '404.html'));
+console.log('  ✓ 404.html');
+
 // Verify no unreplaced tokens
 const filesToCheck = ['dist/index.html', 'dist/en/index.html'];
 for (const lang of LANGUAGES) {
