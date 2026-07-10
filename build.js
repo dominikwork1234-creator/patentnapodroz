@@ -220,4 +220,16 @@ ${sitemapUrls.join('\n')}
 fs.writeFileSync(path.join(DIST, 'sitemap.xml'), sitemap);
 fs.writeFileSync(path.join(DIST, 'robots.txt'), `User-agent: *\nAllow: /\n\nSitemap: ${base}/sitemap.xml\n`);
 console.log('  ✓ sitemap.xml + robots.txt');
+
+// Cloudflare: root favicon.ico + _headers + _redirects (vercel.json is ignored by Cloudflare)
+fs.copyFileSync('assets/img/favicon.ico', path.join(DIST, 'favicon.ico'));
+fs.writeFileSync(path.join(DIST, '_headers'), `/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+`);
+fs.writeFileSync(path.join(DIST, '_redirects'), `/index.html / 301
+`);
+console.log('  ✓ favicon.ico + _headers + _redirects (Cloudflare)');
 console.log('✅ Build complete');
