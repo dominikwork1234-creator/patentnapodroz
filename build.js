@@ -418,6 +418,6 @@ fs.writeFileSync(path.join(DIST, '_headers'), `/assets/*
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
 `);
-fs.writeFileSync(path.join(DIST, '_redirects'), `https://www.patentnapodroz.pl/* https://patentnapodroz.pl/:splat 301\n/index.html / 301\n`);
+fs.writeFileSync(path.join(DIST, '_redirects'), `/index.html / 301\n`);
 console.log('  ✓ favicon.ico + _headers + _redirects (Cloudflare)');
 console.log('✅ Build complete');
