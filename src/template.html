@@ -30,6 +30,7 @@
   "email": "patentnapodroz@gmail.com",
   "address": {"@type": "PostalAddress", "streetAddress": "ul. Wczasowa 34", "addressLocality": "Bydgoszcz", "postalCode": "85-155", "addressCountry": "PL"},
   "taxID": "9532786916",
+  "identifier": [{"@type": "PropertyValue", "name": "KRS", "value": "0000941682"}, {"@type": "PropertyValue", "name": "CEOTiPO", "value": "42246"}],
   "url": "https://patentnapodroz.pl",
   "sameAs": ["https://www.facebook.com/patentnapodroz"],
   "areaServed": "PL",
@@ -352,7 +353,7 @@
     <div class="f-col">
       <img src="/assets/img/logo-white.svg" alt="{{meta.site_name}}" class="f-logo" onerror="this.src='/assets/img/logo.svg'">
       <p>{{footer.about_text}}</p>
-      <p class="f-legal">{{footer.company_label}}: {{meta.company_name}}<br>{{footer.ceotipo_label}}: {{meta.ceotipo}} · {{meta.city}}</p>
+      <p class="f-legal">{{footer.company_label}}: {{meta.company_name}}<br>{{meta.address_line}}<br>NIP: {{meta.nip}} · KRS: {{meta.krs}}<br>{{footer.ceotipo_label}}: {{meta.ceotipo}}</p>
     </div>
     <div class="f-col">
       <h4>{{footer.links_title}}</h4>

@@ -8,7 +8,10 @@
     "facebook": "https://www.facebook.com/patentnapodroz",
     "company_name": "Clever Training Sp. z o.o.",
     "ceotipo": "42246",
-    "city": "Bydgoszcz"
+    "city": "Bydgoszcz",
+    "address_line": "ul. Wczasowa 34, 85-155 Bydgoszcz",
+    "nip": "9532786916",
+    "krs": "0000941682"
   },
   "nav": {
     "home": "Home",
