@@ -295,3 +295,16 @@ section{padding:88px 0}
 .cookie-banner a{color:#fff;text-decoration:underline}
 .cookie-banner-actions{display:flex;gap:10px;flex-shrink:0}
 .btn-sm{padding:9px 18px;font-size:14px}
+
+/* Newsletter capture */
+.newsletter{padding:56px 0}
+.newsletter-box{background:var(--navy);border-radius:20px;padding:44px 36px;text-align:center;color:#fff}
+.newsletter-box h2{color:#fff;margin-bottom:10px}
+.newsletter-box p{color:#c7d4e6;max-width:560px;margin:0 auto 22px}
+.newsletter-form{max-width:560px;margin:0 auto}
+.newsletter-row{display:flex;gap:10px}
+.newsletter-row input[type=email]{flex:1;padding:14px 16px;border-radius:10px;border:none;font-size:1rem}
+.newsletter-gdpr{display:flex;gap:8px;align-items:flex-start;font-size:.8rem;color:#b9c7dc;margin-top:12px;text-align:left}
+.newsletter-gdpr a{color:#fff;text-decoration:underline}
+.newsletter .form-message{margin-top:10px}
+@media(max-width:560px){.newsletter-row{flex-direction:column}}

@@ -332,5 +332,14 @@
     "link": "Learn more",
     "accept": "Accept",
     "reject": "Reject"
+  },
+  "newsletter": {
+    "title": "Don't miss the next trip",
+    "text": "New departures fill up fast. Leave your e-mail and we'll let you know as soon as a new trip is announced.",
+    "placeholder": "Your e-mail address",
+    "button": "Notify me",
+    "gdpr": "I consent to e-mail contact about new trips. Details in the <a href=\"{{PRIVACY_URL}}\">privacy policy</a>.",
+    "success": "Thank you! We'll let you know about new trips.",
+    "error": "Oops, something went wrong. Please try again or call +48 501 034 351."
   }
 }

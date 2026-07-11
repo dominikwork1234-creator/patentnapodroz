@@ -682,5 +682,14 @@
       "h1": "Spływ kajakowy Brdą – aktywna integracja na wodzie",
       "body": "Brda to jedna z najpiękniejszych rzek kajakowych w Polsce – i świetny teren na pierwszy spływ dla młodzieży. Uczestnicy przeszli krótkie szkolenie z instruktorami, otrzymali pełne wyposażenie (kajaki, wiosła, kapoki) i ruszyli na trasę dobraną do możliwości grupy.\n\nSpływ zabezpieczali doświadczeni instruktorzy, a na mecie czekał czas na wspólne ognisko i odpoczynek. Tego typu wyjazd doskonale sprawdza się jako aktywna alternatywa dla klasycznej wycieczki szkolnej – uczy współpracy i zostaje w pamięci na długo."
     }
-  ]
+  ],
+  "newsletter": {
+    "title": "Nie przegap kolejnego wyjazdu",
+    "text": "Nowe terminy rozchodzą się szybko. Zostaw e-mail, a powiadomimy Cię, gdy tylko ogłosimy nowy wyjazd.",
+    "placeholder": "Twój adres e-mail",
+    "button": "Powiadom mnie",
+    "gdpr": "Wyrażam zgodę na kontakt e-mailowy w sprawie nowych wyjazdów. Szczegóły w <a href=\"{{PRIVACY_URL}}\">polityce prywatności</a>.",
+    "success": "Dziękujemy! Damy znać o nowych wyjazdach.",
+    "error": "Ups, coś poszło nie tak. Spróbuj ponownie lub zadzwoń: 501 034 351."
+  }
 }

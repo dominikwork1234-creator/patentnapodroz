@@ -90,3 +90,29 @@ if (form) {
     });
   }
 })();
+
+// Newsletter capture (multiple forms per page)
+document.querySelectorAll('.newsletter-form').forEach(function (nf) {
+  nf.addEventListener('submit', async function (e) {
+    e.preventDefault();
+    var m = nf.querySelector('.form-message');
+    var btn = nf.querySelector('button[type=submit]');
+    var data = Object.fromEntries(new FormData(nf));
+    btn.disabled = true;
+    try {
+      var r = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify(data)
+      });
+      var j = await r.json();
+      m.textContent = j.success ? nf.dataset.successMessage : nf.dataset.errorMessage;
+      m.className = 'form-message ' + (j.success ? 'success' : 'error');
+      if (j.success) nf.reset();
+    } catch (err) {
+      m.textContent = nf.dataset.errorMessage;
+      m.className = 'form-message error';
+    }
+    btn.disabled = false;
+  });
+});

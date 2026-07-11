@@ -250,6 +250,20 @@ function faqHtml(items){
   return `<h2>Najczęstsze pytania</h2>\n` + items.map((it,i)=>
     `<details class="faq-item"${i===0?' open':''}><summary>${it.q}</summary><p>${it.a}</p></details>`).join('\n');
 }
+function newsletterHtml(){
+  return `<section class="newsletter"><div class="container"><div class="newsletter-box">
+    <h2>{{newsletter.title}}</h2><p>{{newsletter.text}}</p>
+    <form class="newsletter-form" data-success-message="{{newsletter.success}}" data-error-message="{{newsletter.error}}">
+      <input type="hidden" name="access_key" value="dbf1589c-99d3-4e5c-b627-4e5e3ba80492">
+      <input type="hidden" name="subject" value="ZAPIS NA LISTĘ WYJAZDÓW — patentnapodroz.pl">
+      <input type="checkbox" name="botcheck" style="display:none">
+      <div class="newsletter-row"><input type="email" name="email" placeholder="{{newsletter.placeholder}}" required>
+      <button type="submit" class="btn btn-accent">{{newsletter.button}}</button></div>
+      <label class="newsletter-gdpr"><input type="checkbox" name="gdpr" required> <span>{{newsletter.gdpr}}</span></label>
+      <div class="form-message"></div>
+    </form>
+  </div></div></section>`;
+}
 function ctaHtml(){
   return `<div class="cta-banner" style="border-radius:16px;margin:48px 0;padding:40px 32px;text-align:center">
     <h2 style="color:#fff">Zapytaj o wyjazd dla swojej grupy</h2>
@@ -284,6 +298,7 @@ for (const c of (plData.category_pages||[])) {
       ${faqHtml(c.faq)}
       ${relatedHtml(c.related)}
     </div>
+    ${newsletterHtml()}
     ${ctaHtml()}
   </div>
 </main>`;
