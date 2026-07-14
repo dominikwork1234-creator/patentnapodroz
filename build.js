@@ -322,6 +322,21 @@ for (const c of (plData.category_pages||[])) {
 </div></main>`;
   writeSubpage(o.slug, o.meta_title, o.meta_description, body, [breadcrumbLd([{name:'Strona główna',url:`${BASE}/`},{name:o.h1,url:`${BASE}/o-nas/`}])], '0.5');
 }
+
+// --- Atrybucje zdjęć (wymóg licencji CC) ---
+{
+  const a = plData.attributions_page;
+  const body = `
+<main class="legal-page"><div class="container">
+  <nav class="legal-back"><a href="/">Strona główna</a> › ${a.h1}</nav>
+  <h1>${a.h1}</h1>
+  <div class="legal-content">
+    <p><strong>${a.lead}</strong></p>
+    <ul>${a.items.map(i=>`<li>${i}</li>`).join('')}</ul>
+  </div>
+</div></main>`;
+  writeSubpage(a.slug, a.meta_title, a.meta_description, body, [breadcrumbLd([{name:'Strona główna',url:`${BASE}/`},{name:a.h1,url:`${BASE}/atrybucje-zdjec/`}])], '0.2');
+}
 {
   const k = plData.kontakt_page;
   // Wyciagnij sekcje formularza z template.html (DRY - jeden formularz w repo)

@@ -694,5 +694,17 @@
     "gdpr": "Wyrażam zgodę na kontakt e-mailowy w sprawie nowych wyjazdów. Szczegóły w <a href=\"{{PRIVACY_URL}}\">polityce prywatności</a>.",
     "success": "Dziękujemy! Damy znać o nowych wyjazdach.",
     "error": "Ups, coś poszło nie tak. Spróbuj ponownie lub zadzwoń: 501 034 351."
+  },
+  "attributions_page": {
+    "slug": "atrybucje-zdjec",
+    "meta_title": "Atrybucje zdjęć | Patent na Podróż",
+    "meta_description": "Informacje o licencjach i autorach zdjęć wykorzystanych na stronie Patent na Podróż.",
+    "h1": "Atrybucje zdjęć",
+    "lead": "Część zdjęć na naszej stronie pochodzi z zasobów na licencjach Creative Commons. Poniżej podajemy autorów zgodnie z warunkami tych licencji.",
+    "items": [
+      "Jezioro Bled (sekcja „Austria, Słowenia i Czechy\") — fot. Leandro Neumann Ciuffo, licencja CC BY 2.0, źródło: Wikimedia Commons.",
+      "Molo w Gdyni-Orłowie (sekcja „Gdynia dla młodzieży\") — fot. Andrzej Otrębski, licencja CC BY-SA 4.0, źródło: Wikimedia Commons.",
+      "Kajaki nad rzeką (sekcja „Spływ kajakowy Brdą\") — licencja CC0 (domena publiczna), źródło: rawpixel."
+    ]
   }
 }

@@ -344,5 +344,17 @@
     "gdpr": "I consent to e-mail contact about new trips. Details in the <a href=\"{{PRIVACY_URL}}\">privacy policy</a>.",
     "success": "Thank you! We'll let you know about new trips.",
     "error": "Oops, something went wrong. Please try again or call +48 501 034 351."
+  },
+  "attributions_page": {
+    "slug": "atrybucje-zdjec",
+    "meta_title": "Photo attributions | Patent na Podróż",
+    "meta_description": "Information about photo licenses and authors used on the Patent na Podróż website.",
+    "h1": "Photo attributions",
+    "lead": "Some photos on our website come from Creative Commons sources. Below we credit the authors as required by those licenses.",
+    "items": [
+      "Lake Bled (\"Austria, Slovenia and Czechia\" section) — photo by Leandro Neumann Ciuffo, CC BY 2.0, source: Wikimedia Commons.",
+      "Gdynia-Orłowo pier (\"Gdynia for youth\" section) — photo by Andrzej Otrębski, CC BY-SA 4.0, source: Wikimedia Commons.",
+      "Kayaks by the river (\"Brda kayaking\" section) — CC0 (public domain), source: rawpixel."
+    ]
   }
 }
